@@ -14,12 +14,12 @@ library.add(fab, fas, far)
 const Nav = styled.div`
   background: rgb(113, 84, 58);
   margin: 0;
+  height: 200px;
 `
 
 const Header = () => (
   <Nav>
     <FontAwesomeIcon icon={["fas", "camera-retro"]} size="3x" />
-    {/* <div>efhasdicscscf</div> */}
   </Nav>
 )
 
