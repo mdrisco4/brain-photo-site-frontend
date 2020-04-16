@@ -25,21 +25,20 @@ const Layout = ({ children }) => {
 
   return (
     <>
-      <Header siteTitle={data.site.siteMetadata.title} />
+      <Header />
+      <body
+        style={{
+          margin: "0",
+        }}
+      ></body>
       <div
         style={{
-          margin: `0 auto`,
-          maxWidth: 960,
-          padding: `0 1.0875rem 1.45rem`,
+          margin: `0`,
+          backgroundColor: "rgb(42, 97, 24)",
+          border: "5px solid rgb(42, 97, 24)",
+          minHeight: "1200px",
         }}
-      >
-        <main>{children}</main>
-        <footer>
-          © {new Date().getFullYear()}, Built with
-          {` `}
-          <a href="https://www.gatsbyjs.org">Gatsby</a>
-        </footer>
-      </div>
+      ></div>
     </>
   )
 }
