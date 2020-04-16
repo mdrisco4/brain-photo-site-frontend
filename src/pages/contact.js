@@ -14,7 +14,7 @@ const About = () => (
         marginRight: "auto",
     }}>
       If you have any questions anout any of my work or would like to work with
-      me contact info below
+      me please contact me at:
     </div>
     <div
       style={{

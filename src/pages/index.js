@@ -16,7 +16,6 @@ const IndexPage = () => (
     <div style={{
       width: "100%",
       fontSize: "60px",
-      // paddingLeft: "10%",
       paddingTop: "12px",
       paddingRight: "12px",
       textAlign: "right",
