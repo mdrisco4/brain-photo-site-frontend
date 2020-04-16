@@ -38,7 +38,9 @@ const Layout = ({ children }) => {
           border: "5px solid rgb(42, 97, 24)",
           minHeight: "1200px",
         }}
-      ></div>
+      >
+        <main>{children}</main>
+      </div>
     </>
   )
 }
