@@ -58,9 +58,9 @@ const Header = () => (
       <IconLink href="/">
         <FontAwesomeIcon icon={["fas", "camera-retro"]} size="2x" />
       </IconLink>
-      <HeaderLink>Portfolio</HeaderLink>
-      <HeaderLink>About</HeaderLink>
-      <HeaderLink>Contact</HeaderLink>
+      <HeaderLink href="/portfolio/">Portfolio</HeaderLink>
+      <HeaderLink href="/about/">About</HeaderLink>
+      <HeaderLink href="/contact/">Contact</HeaderLink>
     </div>
   </Nav>
 )

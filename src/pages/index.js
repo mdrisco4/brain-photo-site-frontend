@@ -19,15 +19,16 @@ const IndexPage = () => (
       fontSize: "60px",
       paddingTop: "12px",
       textAlign: "right",
-      color: "rgb(216, 100, 52)",
-      textShadow: "2px 2px black",
+      color: "black",
+      // color: "rgb(216, 100, 52)",
+      // textShadow: "2px 2px black",
     }}>Brian Fragnoli</div>
     <div
     style={{
       fontSize: "45px",
       textAlign: "right",
       paddingTop: "25px",
-      textShadow: "2px 2px rgb(216, 100, 52)",
+      // textShadow: "2px 2px rgb(216, 100, 52)",
     }}>Freelance Photography</div>
     </div>
     <img src="https://i.imgur.com/w0PoPDx.png" style={{
