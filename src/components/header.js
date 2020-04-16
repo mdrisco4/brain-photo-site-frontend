@@ -23,6 +23,22 @@ const IconLink = styled.a`
   font-size: 60px;
   text-decoration: "none";
   filter: drop-shadow(2px 2px black);
+  &:hover {
+    color: black;
+    filter: drop-shadow(2px 2px rgb(216, 100, 52));
+  }
+`
+
+const HeaderLink = styled.a`
+  color: rgb(216, 100, 52);
+  font-size: 60px;
+  text-decoration: none;
+  text-shadow: 2px 2px black;
+  padding-top: 28px;
+  &:hover {
+    color: black;
+    text-shadow: 2px 2px rgb(216, 100, 52);
+  }
 `
 
 const Header = () => (
@@ -42,42 +58,9 @@ const Header = () => (
       <IconLink href="/">
         <FontAwesomeIcon icon={["fas", "camera-retro"]} size="2x" />
       </IconLink>
-      <a
-        href="/portfolio/"
-        style={{
-          color: "rgb(216, 100, 52)",
-          fontSize: "60px",
-          textDecoration: "none",
-          textShadow: "2px 2px black",
-          paddingTop: "28px",
-        }}
-      >
-        Portfolio
-      </a>
-      <a
-        href="/about/"
-        style={{
-          color: "rgb(216, 100, 52)",
-          fontSize: "60px",
-          textDecoration: "none",
-          textShadow: "2px 2px black",
-          paddingTop: "28px",
-        }}
-      >
-        About
-      </a>
-      <a
-        href="/contact"
-        style={{
-          color: "rgb(216, 100, 52)",
-          fontSize: "60px",
-          textDecoration: "none",
-          textShadow: "2px 2px black",
-          paddingTop: "28px",
-        }}
-      >
-        Contact
-      </a>
+      <HeaderLink>Portfolio</HeaderLink>
+      <HeaderLink>About</HeaderLink>
+      <HeaderLink>Contact</HeaderLink>
     </div>
   </Nav>
 )

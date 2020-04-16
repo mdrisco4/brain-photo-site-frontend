@@ -25,7 +25,7 @@ const About = () => (
         textShadow: "1px 1px rgb(216, 100, 52)",
       }}
     >
-      Email: beefrags1982@gmail.com
+      beefrags1982@gmail.com
     </div>
     <div
       style={{
@@ -36,7 +36,7 @@ const About = () => (
         textShadow: "1px 1px rgb(216, 100, 52)",
       }}
     >
-      Phone: (585) 267-9609
+      (585) 267-9609
     </div>
     <div
       style={{

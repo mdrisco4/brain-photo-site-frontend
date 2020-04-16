@@ -11,13 +11,13 @@ const IndexPage = () => (
       display: "flex",
     }}>
       <div style={{
-        width: "50%",
+        width: "48%",
+        paddingRight: "2%",
       }}>
     <div style={{
       width: "100%",
       fontSize: "60px",
       paddingTop: "12px",
-      paddingRight: "12px",
       textAlign: "right",
       color: "rgb(216, 100, 52)",
       textShadow: "2px 2px black",
