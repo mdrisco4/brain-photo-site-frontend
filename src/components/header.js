@@ -1,6 +1,7 @@
+import React from "react"
+import styled from "styled-components"
 // import { Link } from "gatsby"
 // import PropTypes from "prop-types"
-import React from "react"
 
 import { library } from "@fortawesome/fontawesome-svg-core"
 import { fas } from "@fortawesome/free-solid-svg-icons"
@@ -12,15 +13,13 @@ library.add(fab, fas, far)
 
 const Nav = styled.div`
   background: rgb(113, 84, 58);
-  /* border-top: 24px solid black;
-  border-bottom: 24px solid black; */
   margin: 0;
 `
 
-const Header = ({ siteTitle }) => (
+const Header = () => (
   <Nav>
     <FontAwesomeIcon icon={["fas", "camera-retro"]} size="3x" />
-    <div>efhasdif</div>
+    {/* <div>efhasdicscscf</div> */}
   </Nav>
 )
 
