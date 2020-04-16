@@ -39,7 +39,7 @@ const Header = () => (
       {/* <FontAwesomeIcon icon={["fas", "camera-retro"]} size="3x" />
     <FontAwesomeIcon icon={["fas", "bars"]} size="3x" /> */}
 
-      <IconLink>
+      <IconLink href="/">
         <FontAwesomeIcon icon={["fas", "camera-retro"]} size="2x" />
       </IconLink>
       <a
