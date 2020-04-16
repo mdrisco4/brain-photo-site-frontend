@@ -6,7 +6,11 @@ import Layout from "../components/layout"
 
 const About = () => (
   <Layout>
-    <div>dcbhjdvbjdb</div>
+    <div style={{
+      textAlign: "center",
+      fontSize: "52px",
+      marginTop: "20px",
+    }}>About Me</div>
   </Layout>
 )
 

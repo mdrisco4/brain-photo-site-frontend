@@ -33,7 +33,7 @@ const Header = () => (
       textShadow: "2px 2px black"
     }}>Home
     </a>
-      <a href="/"
+      <a href="/portfolio/"
     style={{
       color: "rgb(216, 100, 52)",
       fontSize: "60px",
@@ -49,7 +49,7 @@ const Header = () => (
       textShadow: "2px 2px black"
     }}>About
     </a>
-    <a href="/"
+    <a href="/contact"
     style={{
       color: "rgb(216, 100, 52)",
       fontSize: "60px",
