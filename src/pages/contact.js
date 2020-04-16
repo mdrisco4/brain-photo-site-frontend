@@ -16,8 +16,13 @@ const About = () => (
       If you have any questions anout any of my work or would like to work with
       me please contact me at:
     </div>
-    <div
+    <a href="mailto:beefrags1982@gmail.com" target="_blank"
       style={{
+          color: "black",
+          textDecoration: "none",
+        display: "block",
+        marginLeft: "auto",
+        marginRight: "auto",
         textAlign: "center",
         fontSize: "45px",
         marginTop: "24px",
@@ -26,12 +31,15 @@ const About = () => (
       }}
     >
       beefrags1982@gmail.com
-    </div>
+    </a>
     <div
       style={{
+        //   display: "inline-block",
         textAlign: "center",
         fontSize: "45px",
         marginTop: "24px",
+        // marginLeft: "auto",
+        // marginRight: "auto",
         fontWeight: "bold",
         textShadow: "1px 1px rgb(216, 100, 52)",
       }}

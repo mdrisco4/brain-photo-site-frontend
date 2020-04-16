@@ -35,6 +35,7 @@ const HeaderLink = styled.a`
   text-decoration: none;
   text-shadow: 2px 2px black;
   padding-top: 28px;
+  font-weight: bold;
   &:hover {
     color: black;
     text-shadow: 2px 2px rgb(216, 100, 52);
@@ -47,8 +48,8 @@ const Header = () => (
       style={{
         display: "flex",
         padding: "15px",
-        paddingLeft: "50px",
-        paddingRight: "50px",
+        paddingLeft: "5%",
+        paddingRight: "5%",
         justifyContent: "space-between",
       }}
     >
