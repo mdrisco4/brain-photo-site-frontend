@@ -4,6 +4,10 @@ import React from "react"
 import Layout from "../components/layout"
 // import SEO from "../components/seo"
 
+
+const url = "https://cdn.contentful.com/spaces/hkey7bq8d8xc/entries?access_token=y0u9tyuxRS9TnyYKQ_yhIyIIaWkOj0mb1TS6yKl7VUk"
+
+
 const Portfolio = () => (
   <Layout>
       <div style={{
