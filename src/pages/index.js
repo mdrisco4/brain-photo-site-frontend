@@ -34,7 +34,7 @@ const Intro = styled.div`
   font-size: 24px;
 `
 
-const Headshot = styled.div`
+const Headshot = styled.img`
   width: 40%;
   border-radius: 45px;
   border: 4px solid black;
