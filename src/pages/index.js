@@ -23,43 +23,37 @@ const Name = styled.div`
   color: black;
 `
 
+const Title = styled.div`
+  font-size: 45px;
+  text-align: right;
+  padding-top: 25px;
+`
+
+const Intro = styled.div`
+  text-align: right;
+  font-size: 24px;
+`
+
+const Headshot = styled.div`
+  width: 40%;
+  border-radius: 45px;
+  border: 4px solid black;
+`
+
 const IndexPage = () => (
   <Layout>
     <HomeContainer>
       <TextContainer>
-        <Name
-        >
-          Brian Fragnoli
-        </Name>
-        <div
-          style={{
-            fontSize: "45px",
-            textAlign: "right",
-            paddingTop: "25px",
-          }}
-        >
-          Freelance Photographer
-        </div>
-        <div
-          style={{
-            textAlign: "right",
-            fontSize: "24px",
-          }}
-        >
+        <Name>Brian Fragnoli</Name>
+        <Title>Freelance Photographer</Title>
+        <Intro>
           I am a freelance photographer currently working on my certification
           using a `equipment`. I specialize in still life and sports photography
           and would like to kickstart a career in sideline sports images. Don't
           worry I summitted that climb.
-        </div>
+        </Intro>
       </TextContainer>
-      <img
-        src="https://i.imgur.com/w0PoPDx.png"
-        style={{
-          width: "40%",
-          borderRadius: "45px",
-          border: "4px solid black",
-        }}
-      />
+      <Headshot src="https://i.imgur.com/w0PoPDx.png" />
     </HomeContainer>
   </Layout>
 )
