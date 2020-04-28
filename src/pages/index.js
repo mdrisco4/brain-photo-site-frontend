@@ -1,42 +1,41 @@
 import React from "react"
+import styled from "styled-components"
 // import { Link } from "gatsby"
 
 import Layout from "../components/layout"
 // import Image from "../components/image"
 // import SEO from "../components/seo"
 
+const HomeContainer = styled.div`
+  display: flex;
+`
+
+const TextContainer = styled.div`
+  width: 48%;
+  padding-right: 2%;
+`
+
+const Name = styled.div`
+  width: 100%;
+  font-size: 60px;
+  padding-top: 12px;
+  text-align: right;
+  color: black;
+`
+
 const IndexPage = () => (
   <Layout>
-    <div
-      style={{
-        display: "flex",
-      }}
-    >
-      <div
-        style={{
-          width: "48%",
-          paddingRight: "2%",
-        }}
-      >
-        <div
-          style={{
-            width: "100%",
-            fontSize: "60px",
-            paddingTop: "12px",
-            textAlign: "right",
-            color: "black",
-            // color: "rgb(216, 100, 52)",
-            // textShadow: "2px 2px black",
-          }}
+    <HomeContainer>
+      <TextContainer>
+        <Name
         >
           Brian Fragnoli
-        </div>
+        </Name>
         <div
           style={{
             fontSize: "45px",
             textAlign: "right",
             paddingTop: "25px",
-            // textShadow: "2px 2px rgb(216, 100, 52)",
           }}
         >
           Freelance Photographer
@@ -52,7 +51,7 @@ const IndexPage = () => (
           and would like to kickstart a career in sideline sports images. Don't
           worry I summitted that climb.
         </div>
-      </div>
+      </TextContainer>
       <img
         src="https://i.imgur.com/w0PoPDx.png"
         style={{
@@ -61,7 +60,7 @@ const IndexPage = () => (
           border: "4px solid black",
         }}
       />
-    </div>
+    </HomeContainer>
   </Layout>
 )
 
