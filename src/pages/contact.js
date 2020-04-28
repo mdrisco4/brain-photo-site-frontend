@@ -6,6 +6,14 @@ import styled from "styled-components"
 import Layout from "../components/layout"
 // import SEO from "../components/seo"
 
+const ContactPrompt = styled.div`
+  text-align: center;
+  width: 80%;
+  font-size: 56px;
+  margin-left: auto;
+  margin-right: auto;
+`
+
 const EmailLink = styled.a`
   color: black;
   text-decoration: none;
@@ -23,48 +31,25 @@ const EmailLink = styled.a`
   }
 `
 
+const Info = styled.div`
+  text-align: center;
+  font-size: 45px;
+  margin-top: 24px;
+  font-weight: bold;
+  text-shadow: 1px 1px rgb(216, 100, 52);
+`
+
 const About = () => (
   <Layout>
-    <div
-      style={{
-        textAlign: "center",
-        width: "80%",
-        fontSize: "56px",
-        marginLeft: "auto",
-        marginRight: "auto",
-      }}
-    >
+    <ContactPrompt>
       If you have any questions anout any of my work or would like to work with
       me please contact me at:
-    </div>
+    </ContactPrompt>
     <EmailLink href="mailto:beefrags1982@gmail.com" target="_blank">
       beefrags1982@gmail.com
     </EmailLink>
-    <div
-      style={{
-        //   display: "inline-block",
-        textAlign: "center",
-        fontSize: "45px",
-        marginTop: "24px",
-        // marginLeft: "auto",
-        // marginRight: "auto",
-        fontWeight: "bold",
-        textShadow: "1px 1px rgb(216, 100, 52)",
-      }}
-    >
-      (585) 267-9609
-    </div>
-    <div
-      style={{
-        textAlign: "center",
-        fontSize: "45px",
-        marginTop: "24px",
-        fontWeight: "bold",
-        textShadow: "1px 1px rgb(216, 100, 52)",
-      }}
-    >
-      Perinton, NY 14450
-    </div>
+    <Info>(585) 267-9609</Info>
+    <Info>Perinton, NY 14450</Info>
   </Layout>
 )
 
