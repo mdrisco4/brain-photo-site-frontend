@@ -6,11 +6,11 @@ import Layout from "../components/layout"
 // import SEO from "../components/seo"
 
 var contentful = require('contentful')
-var client = contentful.createClient({
-    space: 'hkey7bq8d8xc',
-    accessToken: 'bRB059jwbB4MphUkzedacei1ZQze8uxraRhh-pDSVIQ'
+// var client = contentful.createClient({
+//     space: 'hkey7bq8d8xc',
+//     accessToken: 'bRB059jwbB4MphUkzedacei1ZQze8uxraRhh-pDSVIQ'
     // accessToken: 'bVApRues2Wm_bYmDaozMg7cudIqxGtEghelAZQOKSLNQ'
-  })
+//   })
 
 // const url =
 //   "https://cdn.contentful.com/spaces/hkey7bq8d8xc/entries?access_token=y0u9tyuxRS9TnyYKQ_yhIyIIaWkOj0mb1TS6yKl7VUk"
@@ -32,14 +32,14 @@ var client = contentful.createClient({
 
 //SINGLE ENTRY 
 
-client.getEntry('20Bpyxs7Mswdx3cMBijZ8f')
-.then(function (entry) {
+// client.getEntry('20Bpyxs7Mswdx3cMBijZ8f')
+// .then(function (entry) {
   // logs the entry metadata
-  console.log(entry)
+//   console.log(entry)
 
   // logs the field with ID title
-  console.log(entry.fields.productName)
-})
+//   console.log(entry.fields.productName)
+// })
 
 
 
