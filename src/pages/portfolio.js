@@ -9,6 +9,7 @@ var contentful = require('contentful')
 var client = contentful.createClient({
     space: 'hkey7bq8d8xc',
     accessToken: 'bRB059jwbB4MphUkzedacei1ZQze8uxraRhh-pDSVIQ'
+    // accessToken: 'bVApRues2Wm_bYmDaozMg7cudIqxGtEghelAZQOKSLNQ'
   })
 
 // const url =
