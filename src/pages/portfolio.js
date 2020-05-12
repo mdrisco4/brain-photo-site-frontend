@@ -17,45 +17,6 @@ var contentful = require('contentful')
 //   "https://cdn.contentful.com/spaces/hkey7bq8d8xc/entries?access_token=y0u9tyuxRS9TnyYKQ_yhIyIIaWkOj0mb1TS6yKl7VUk"
 
 
-//   ??
-//   client.getAssets()
-//   .then(function (assets) {
-//     assets.items.map(function(asset){
-//       var imageURL = url;
-//     });
-//   })
-//   .catch(function (e) {
-//     console.log(e);
-//   });
-
-
-
-
-//SINGLE ENTRY 
-
-// client.getEntry('20Bpyxs7Mswdx3cMBijZ8f')
-// .then(function (entry) {
-  // logs the entry metadata
-//   console.log(entry)
-
-  // logs the field with ID title
-//   console.log(entry.fields.productName)
-// })
-
-
-
-//ALL ENTRIES IN SPACE
-
-// client.getEntries()
-// .then(function (entries) {
-//   // log the title for all the entries that have it
-//   entries.items.forEach(function (entry) {
-//     if(entry.fields.productName) {
-//       console.log(entry.fields.productName)
-//     }
-//   })
-// })
-
 
 export const ImageQuery = graphql`
     query MyQuery {
@@ -83,9 +44,14 @@ const Photo = styled.img`
   margin-right: 20%;
 `
 
-const Portfolio = () => (
+const Portfolio = props => {
+    const image = props.data.allContentfulAsset.nodes[0].fluid
+
+
+return (
   <Layout>
     <PhotoGrid>
+        <p>{image}</p>
       <Photo src="https://i.imgur.com/CosJK9o.jpg" />
       <Photo src="https://i.imgur.com/tu0FRyn.jpg" />
       <Photo src="https://i.imgur.com/wSqiQim.jpg" />
@@ -94,5 +60,6 @@ const Portfolio = () => (
     </PhotoGrid>
   </Layout>
 )
+}
 
 export default Portfolio
