@@ -4,19 +4,6 @@ import { useStaticQuery, graphql } from "gatsby";
 // import { Link } from "gatsby"
 
 import Layout from "../components/layout"
-// import SEO from "../components/seo"
-
-var contentful = require('contentful')
-// var client = contentful.createClient({
-//     space: 'hkey7bq8d8xc',
-//     accessToken: 'bRB059jwbB4MphUkzedacei1ZQze8uxraRhh-pDSVIQ'
-    // accessToken: 'bVApRues2Wm_bYmDaozMg7cudIqxGtEghelAZQOKSLNQ'
-//   })
-
-// const url =
-//   "https://cdn.contentful.com/spaces/hkey7bq8d8xc/entries?access_token=y0u9tyuxRS9TnyYKQ_yhIyIIaWkOj0mb1TS6yKl7VUk"
-
-
 
 export const ImageQuery = graphql`
     query MyQuery {
@@ -47,13 +34,17 @@ const Photo = styled.img`
 const Portfolio = props => {
     const image = props.data.allContentfulAsset.nodes[0].title
     const photo = props.data.allContentfulAsset.nodes[0].fluid.src
+    // const photo = props.data.allContentfulAsset.nodes[0].fluid.src
+    // const photo = props.data.allContentfulAsset.nodes[0].fluid.src
+    // const photo = props.data.allContentfulAsset.nodes[0].fluid.src
+    // const photo = props.data.allContentfulAsset.nodes[0].fluid.src
 
 
 return (
   <Layout>
-    <p>{image}</p>
-    <img src={photo} />
+    {/* <p>{image}</p> */}
     <PhotoGrid>
+    <Photo src={photo} />
       <Photo src="https://i.imgur.com/CosJK9o.jpg" />
       <Photo src="https://i.imgur.com/tu0FRyn.jpg" />
       <Photo src="https://i.imgur.com/wSqiQim.jpg" />
