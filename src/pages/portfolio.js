@@ -46,10 +46,13 @@ const Photo = styled.img`
 
 const Portfolio = props => {
     const image = props.data.allContentfulAsset.nodes[0].title
+    const photo = props.data.allContentfulAsset.nodes[0].fluid.src
 
 
 return (
   <Layout>
+    <p>{image}</p>
+    <img src={photo} />
     <PhotoGrid>
       <Photo src="https://i.imgur.com/CosJK9o.jpg" />
       <Photo src="https://i.imgur.com/tu0FRyn.jpg" />
