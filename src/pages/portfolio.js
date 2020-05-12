@@ -1,5 +1,6 @@
 import React from "react"
 import styled from "styled-components"
+import { useStaticQuery, graphql } from "gatsby";
 // import { Link } from "gatsby"
 
 import Layout from "../components/layout"
@@ -54,6 +55,20 @@ var contentful = require('contentful')
 //     }
 //   })
 // })
+
+
+export const ImageQuery = graphql`
+    query MyQuery {
+        allContentfulAsset {
+        nodes {
+            title
+            fluid {
+            src
+            }
+        }
+        }
+    }
+  `
 
 const PhotoGrid = styled.div`
   display: grid;
