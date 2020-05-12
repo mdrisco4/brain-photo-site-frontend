@@ -42,7 +42,7 @@ const Portfolio = props => {
 
 return (
   <Layout>
-    {/* <p>{image}</p> */}
+    <p>{image}</p>
     <PhotoGrid>
     <Photo src={photo} />
       <Photo src="https://i.imgur.com/CosJK9o.jpg" />
