@@ -23,14 +23,16 @@ const Layout = ({ children }) => {
     }
   `)
 
+  console.log(data)
+
   return (
     <>
-      <Header />
-      <body
+      {/* <body
         style={{
           margin: "0",
         }}
-      ></body>
+      ></body> */}
+      <Header />
       <div
         style={{
           margin: `0`,

@@ -1,6 +1,6 @@
 import React from "react"
 import styled from "styled-components"
-import { useStaticQuery, graphql } from "gatsby"
+import { graphql } from "gatsby"
 // import { Link } from "gatsby"
 
 import Layout from "../components/layout"
@@ -18,6 +18,15 @@ export const ImageQuery = graphql`
     }
   }
 `
+
+const URL = "https://cdn.contentful.com/spaces/hkey7bq8d8xc/entries?access_token=bRB059jwbB4MphUkzedacei1ZQze8uxraRhh-pDSVIQ"
+fetch(URL)
+  .then(response => response.json())
+  .then(data => console.log(data.includes.Asset[0].fields));
+//   .then(data => console.log(data.items));
+
+
+
 
 const PhotoGrid = styled.div`
   display: grid;
@@ -46,6 +55,9 @@ const Portfolio = props => {
   const title = props.data.allContentfulAsset.nodes[0].title
   const photo = props.data.allContentfulAsset.nodes[0].fluid.src
   const description = props.data.allContentfulAsset.nodes[0].description
+//   const title = props.data.allContentfulAsset.nodes[1].title
+//   const photo = props.data.allContentfulAsset.nodes[1].fluid.src
+//   const description = props.data.allContentfulAsset.nodes[1].description
 
   return (
     <Layout>
