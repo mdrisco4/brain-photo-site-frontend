@@ -19,6 +19,8 @@ export const ImageQuery = graphql`
   }
 `
 
+console.log(ImageQuery)
+
 const URL = "https://cdn.contentful.com/spaces/hkey7bq8d8xc/entries?access_token=bRB059jwbB4MphUkzedacei1ZQze8uxraRhh-pDSVIQ"
 // fetch(URL)
 //   .then(response => response.json())
@@ -77,12 +79,13 @@ class Portfolio extends Component {
         // }
         // )
         .then(data => console.log(data.includes.Asset));
-        console.log(this.state.photos);
-        console.log(this.state.photos.length);
+        // console.log(this.state.photos);
+        // console.log(this.state.photos.length);
     }
 
     
  render() {
+     
     //  for (let i = 0; i < this.photos.length; i++){
     //      newImage = item[i].fields.file.url
     //      return (
