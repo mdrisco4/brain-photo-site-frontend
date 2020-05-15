@@ -72,23 +72,35 @@ class Portfolio extends Component {
     componentDidMount() {
         fetch(URL)
         .then(response => response.json())
-        .then(data => {
-            this.setState({ photos: data.includes.Asset });
-        }
-        )
-        // console.log(data.includes.Asset);
+        // .then(data => {
+        //     this.setState({ photos: data.includes.Asset });
+        // }
+        // )
+        .then(data => console.log(data.includes.Asset));
+        console.log(this.state.photos);
+        console.log(this.state.photos.length);
     }
 
     
  render() {
+    //  for (let i = 0; i < this.photos.length; i++){
+    //      newImage = item[i].fields.file.url
+    //      return (
+    //         <ItemContainer>
+    //         <Photo src={newImage} />
+    //       </ItemContainer>
+    //      )
+    //  }
+         
      return (
     <Layout>
       <PhotoGrid>
-        <ItemContainer>
+          {/* <Photo src={newImage} /> */}
+        {/* <ItemContainer> */}
           {/* <Title>{title}</Title>
           <Photo src={photo} />
           <Description>{description}</Description> */}
-        </ItemContainer>
+        {/* </ItemContainer> */}
         <ItemContainer>
           <Photo src="https://i.imgur.com/CosJK9o.jpg" />
         </ItemContainer>
