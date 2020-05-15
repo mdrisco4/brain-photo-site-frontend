@@ -54,15 +54,29 @@ const Description = styled.div`
   text-align: center;
 `
 
-const Portfolio = props => {
-  const title = props.data.allContentfulAsset.nodes[0].title
-  const photo = props.data.allContentfulAsset.nodes[0].fluid.src
-  const description = props.data.allContentfulAsset.nodes[0].description
-//   const title = props.data.allContentfulAsset.nodes[1].title
-//   const photo = props.data.allContentfulAsset.nodes[1].fluid.src
-//   const description = props.data.allContentfulAsset.nodes[1].description
+// const Portfolio = props => {
+//   const title = props.data.allContentfulAsset.nodes[0].title
+//   const photo = props.data.allContentfulAsset.nodes[0].fluid.src
+//   const description = props.data.allContentfulAsset.nodes[0].description
+// }
 
-  return (
+class Portfolio extends Component {
+    constructor(props) {
+        super(props);
+        this.state = {
+            photos: []
+        };
+    }
+    componentDidMount() {
+        fetch(URL)
+        .then(response => response.json())
+        .then(data => console.log(data.includes.Asset));
+    }
+
+
+    
+ render() {
+     return (
     <Layout>
       <PhotoGrid>
         <ItemContainer>
@@ -91,7 +105,10 @@ const Portfolio = props => {
         </ItemContainer>
       </PhotoGrid>
     </Layout>
-  )
+     )
+ }
 }
+
+
 
 export default Portfolio
