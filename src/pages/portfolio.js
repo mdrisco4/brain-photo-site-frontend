@@ -1,4 +1,4 @@
-import React from "react"
+import React, {Component} from "react"
 import styled from "styled-components"
 import { graphql } from "gatsby"
 // import { Link } from "gatsby"
@@ -20,13 +20,15 @@ export const ImageQuery = graphql`
 `
 
 const URL = "https://cdn.contentful.com/spaces/hkey7bq8d8xc/entries?access_token=bRB059jwbB4MphUkzedacei1ZQze8uxraRhh-pDSVIQ"
-fetch(URL)
-  .then(response => response.json())
+// fetch(URL)
+//   .then(response => response.json())
+
 //   .then(data => console.log(data))
 //   .then(data => console.log(data.includes.Asset[0].fields.file.url));
     // .then(data => photos = data.includes.Asset)
     // .then(() => console.log(photos));
-  .then(data => console.log(data.includes.Asset));
+
+//   .then(data => console.log(data.includes.Asset));
 
 
 
@@ -70,9 +72,12 @@ class Portfolio extends Component {
     componentDidMount() {
         fetch(URL)
         .then(response => response.json())
-        .then(data => console.log(data.includes.Asset));
+        .then(data => {
+            this.setState({ photos: data.includes.Asset });
+        }
+        )
+        // console.log(data.includes.Asset);
     }
-
 
     
  render() {
@@ -80,9 +85,9 @@ class Portfolio extends Component {
     <Layout>
       <PhotoGrid>
         <ItemContainer>
-          <Title>{title}</Title>
+          {/* <Title>{title}</Title>
           <Photo src={photo} />
-          <Description>{description}</Description>
+          <Description>{description}</Description> */}
         </ItemContainer>
         <ItemContainer>
           <Photo src="https://i.imgur.com/CosJK9o.jpg" />
