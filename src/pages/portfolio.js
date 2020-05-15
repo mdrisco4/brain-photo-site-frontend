@@ -22,8 +22,9 @@ export const ImageQuery = graphql`
 const URL = "https://cdn.contentful.com/spaces/hkey7bq8d8xc/entries?access_token=bRB059jwbB4MphUkzedacei1ZQze8uxraRhh-pDSVIQ"
 fetch(URL)
   .then(response => response.json())
-  .then(data => console.log(data.includes.Asset[0].fields));
-//   .then(data => console.log(data.items));
+//   .then(data => console.log(data))
+//   .then(data => console.log(data.includes.Asset[0].fields.file.url));
+  .then(data => console.log(data.includes.Asset));
 
 
 
