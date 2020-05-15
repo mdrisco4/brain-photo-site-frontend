@@ -24,6 +24,8 @@ fetch(URL)
   .then(response => response.json())
 //   .then(data => console.log(data))
 //   .then(data => console.log(data.includes.Asset[0].fields.file.url));
+    // .then(data => photos = data.includes.Asset)
+    // .then(() => console.log(photos));
   .then(data => console.log(data.includes.Asset));
 
 
