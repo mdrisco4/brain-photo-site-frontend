@@ -93,6 +93,8 @@ class Portfolio extends Component {
     //         <Photo src={newImage} />
     //       </ItemContainer>
     //      )
+
+    
     //  }
          
      return (
