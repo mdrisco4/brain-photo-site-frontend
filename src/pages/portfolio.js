@@ -74,12 +74,12 @@ class Portfolio extends Component {
     componentDidMount() {
         fetch(URL)
         .then(response => response.json())
-        // .then(data => {
-        //     this.setState({ photos: data.includes.Asset });
-        // }
-        // )
-        .then(data => console.log(data.includes.Asset));
-        // console.log(this.state.photos);
+        .then(data => {
+            this.setState({ photos: data });
+        }
+        )
+        // .then(data => console.log(data.includes.Asset));
+        console.log(this.state.photos);
         // console.log(this.state.photos.length);
     }
 
