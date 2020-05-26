@@ -58,12 +58,6 @@ const Description = styled.div`
   text-align: center;
 `
 
-// const Portfolio = props => {
-//   const title = props.data.allContentfulAsset.nodes[0].title
-//   const photo = props.data.allContentfulAsset.nodes[0].fluid.src
-//   const description = props.data.allContentfulAsset.nodes[0].description
-// }
-
 class Portfolio extends Component {
     constructor(props) {
         super(props);
@@ -75,7 +69,7 @@ class Portfolio extends Component {
         fetch(URL)
         .then(response => response.json())
         .then(data => {
-            this.setState({ photos: data });
+            this.setState({ photos: data.photos });
         }
         )
         // .then(data => console.log(data.includes.Asset));
@@ -85,27 +79,11 @@ class Portfolio extends Component {
 
     
  render() {
-     
-    //  for (let i = 0; i < this.photos.length; i++){
-    //      newImage = item[i].fields.file.url
-    //      return (
-    //         <ItemContainer>
-    //         <Photo src={newImage} />
-    //       </ItemContainer>
-    //      )
 
-    
-    //  }
          
      return (
     <Layout>
       <PhotoGrid>
-          {/* <Photo src={newImage} /> */}
-        {/* <ItemContainer> */}
-          {/* <Title>{title}</Title>
-          <Photo src={photo} />
-          <Description>{description}</Description> */}
-        {/* </ItemContainer> */}
         <ItemContainer>
           <Photo src="https://i.imgur.com/CosJK9o.jpg" />
         </ItemContainer>
