@@ -68,12 +68,15 @@ class Portfolio extends Component {
     componentDidMount() {
         fetch(URL)
         .then(response => response.json())
-        .then(data => {
-            this.setState({ photos: data.photos });
-        }
-        )
+        // .then(data => {
+        //     this.setState({ photos: data.photos });
+        // }
+        // )
         // .then(data => console.log(data.includes.Asset));
-        console.log(this.state.photos);
+        .then(data => console.log(data.includes.Asset[7].fields.file.url));
+
+
+        // console.log(this.state.photos);
         // console.log(this.state.photos.length);
     }
 
@@ -84,6 +87,9 @@ class Portfolio extends Component {
      return (
     <Layout>
       <PhotoGrid>
+      <ItemContainer>
+          <Photo src="data.includes.Asset[7].fields.file.url" />
+        </ItemContainer>
         <ItemContainer>
           <Photo src="https://i.imgur.com/CosJK9o.jpg" />
         </ItemContainer>
