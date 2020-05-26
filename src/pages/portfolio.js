@@ -32,7 +32,7 @@ const URL = "https://cdn.contentful.com/spaces/hkey7bq8d8xc/entries?access_token
 
 //   .then(data => console.log(data.includes.Asset));
 
-
+// const photo = props.data.allContentfulAsset.nodes[7].fluid.src
 
 
 const PhotoGrid = styled.div`
@@ -68,15 +68,17 @@ class Portfolio extends Component {
     componentDidMount() {
         fetch(URL)
         .then(response => response.json())
-        // .then(data => {
-        //     this.setState({ photos: data.photos });
-        // }
-        // )
+        .then(response => {
+            this.setState({ photos: response.includes.Asset });
+        }
+        )
+
+
         // .then(data => console.log(data.includes.Asset));
-        .then(data => console.log(data.includes.Asset[7].fields.file.url));
+        // .then(data => console.log(data.includes.Asset[7].fields.file.url));
 
 
-        // console.log(this.state.photos);
+        console.log(this.state.photos);
         // console.log(this.state.photos.length);
     }
 
@@ -87,9 +89,11 @@ class Portfolio extends Component {
      return (
     <Layout>
       <PhotoGrid>
-      <ItemContainer>
-          <Photo src="data.includes.Asset[7].fields.file.url" />
-        </ItemContainer>
+      {/* <ItemContainer> */}
+          {/* <Title>{title}</Title> */}
+          {/* <Photo src={photo} /> */}
+          {/* <Description>{description}</Description> */}
+        {/* </ItemContainer> */}
         <ItemContainer>
           <Photo src="https://i.imgur.com/CosJK9o.jpg" />
         </ItemContainer>
