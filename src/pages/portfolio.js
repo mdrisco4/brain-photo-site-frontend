@@ -5,35 +5,19 @@ import { graphql } from "gatsby"
 
 import Layout from "../components/layout"
 
-export const ImageQuery = graphql`
-  query MyQuery {
-    allContentfulAsset {
-      nodes {
-        title
-        description
-        fluid {
-          src
-        }
-      }
-    }
-  }
-`
-
-console.log(ImageQuery)
-
-// const URL = "https://cdn.contentful.com/spaces/hkey7bq8d8xc/entries?access_token=bRB059jwbB4MphUkzedacei1ZQze8uxraRhh-pDSVIQ"
-// fetch(URL)
-//   .then(response => response.json())
-
-//   .then(data => console.log(data))
-//   .then(data => console.log(data.includes.Asset[0].fields.file.url));
-    // .then(data => photos = data.includes.Asset)
-    // .then(() => console.log(photos));
-
-//   .then(data => console.log(data.includes.Asset));
-
-// const photo = props.data.allContentfulAsset.nodes[7].fluid.src
-
+// export const ImageQuery = graphql`
+//   query MyQuery {
+//     allContentfulAsset {
+//       nodes {
+//         title
+//         description
+//         fluid {
+//           src
+//         }
+//       }
+//     }
+//   }
+// `
 
 const PhotoGrid = styled.div`
   display: grid;
@@ -87,29 +71,21 @@ class Portfolio extends Component {
             console.log(this.state.codes)
               });
         }
-
-        // .then(res => console.log(res.includes.Asset));
-
-
     
  render() {
     let photos = this.state.data.map(item => {
         return (
-          <ItemContainer key={item.sys.codes}>
+          <div key={item.sys.codes}>
               <Title>{item.fields.title}</Title>
               <Photo src={item.fields.file.url} />
                 <Description>{item.fields.description}</Description>
-          </ItemContainer>
+          </div>
         );
       });
-         
-
-
-
-
+    
      return <Layout>
          <PhotoGrid>
-            <div className="images">{photos}</div>;
+            <ItemContainer>{photos}</ItemContainer>;
          </PhotoGrid>
             </Layout>
 
