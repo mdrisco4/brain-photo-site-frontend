@@ -1,4 +1,4 @@
-import React, {Component} from "react"
+import React, { Component } from "react"
 import styled from "styled-components"
 import { graphql } from "gatsby"
 // import { Link } from "gatsby"
@@ -25,14 +25,17 @@ const PhotoGrid = styled.div`
   grid-template-columns: 1fr 1fr 1fr;
 `
 
-const ItemContainer = styled.div``
+const ItemContainer = styled.div`
+padding-top: 20px;
+`
 
 const Title = styled.div`
   text-align: center;
+  color: white;
 `
 
 const Photo = styled.img`
-  width: 60%;
+  width: 70%;
   margin-top: 24px;
   margin-left: 20%;
   margin-right: 20%;
@@ -40,87 +43,62 @@ const Photo = styled.img`
 
 const Description = styled.div`
   text-align: center;
+  color: white;
 `
 
-const URL = "https://cdn.contentful.com/spaces/hkey7bq8d8xc/entries?access_token=bRB059jwbB4MphUkzedacei1ZQze8uxraRhh-pDSVIQ"
-
+const URL =
+  "https://cdn.contentful.com/spaces/hkey7bq8d8xc/entries?access_token=bRB059jwbB4MphUkzedacei1ZQze8uxraRhh-pDSVIQ"
 
 class Portfolio extends Component {
-    constructor(props) {
-        super(props);
-        this.state = {
-            data: [],
-            codes: [],
-            title: [],
-            imageURL: [],
-            description: []
-        };
+  constructor(props) {
+    super(props)
+    this.state = {
+      data: [],
+      codes: [],
+      title: [],
+      imageURL: [],
+      description: [],
     }
-    componentDidMount() {
-        fetch(URL)
-        .then(res => res.json())
-        .then(res => {
-            this.setState({ data: res.includes.Asset });
-            this.state.data.map(code => {
-                this.setState({ codes: [...this.state.codes, code.sys.id] });
-                this.setState({ title: [...this.state.title, code.fields.title] });
-                this.setState({ imageURL: [...this.state.imageURL, code.fields.file.url] });
-                this.setState({ description: [...this.state.description, code.fields.description] });
-            });
-            console.log(res.includes.Asset);
-            console.log(this.state.codes)
-              });
-        }
-    
- render() {
+  }
+  componentDidMount() {
+    fetch(URL)
+      .then(res => res.json())
+      .then(res => {
+        this.setState({ data: res.includes.Asset })
+        this.state.data.map(code => {
+          this.setState({ codes: [...this.state.codes, code.sys.id] })
+          this.setState({ title: [...this.state.title, code.fields.title] })
+          this.setState({
+            imageURL: [...this.state.imageURL, code.fields.file.url],
+          })
+          this.setState({
+            description: [...this.state.description, code.fields.description],
+          })
+        })
+        console.log(res.includes.Asset)
+        console.log(this.state.codes)
+      })
+  }
+
+  render() {
     let photos = this.state.data.map(item => {
-        return (
-          <div key={item.sys.codes}>
-              <Title>{item.fields.title}</Title>
-              <Photo src={item.fields.file.url} />
-                <Description>{item.fields.description}</Description>
-          </div>
-        );
-      });
-    
-     return <Layout>
-         <PhotoGrid>
-            <ItemContainer>{photos}</ItemContainer>;
-         </PhotoGrid>
-            </Layout>
+      return (
+        <div key={item.sys.codes}>
+          <ItemContainer>
+            <Title>{item.fields.title}</Title>
+            <Photo src={item.fields.file.url} />
+            <Description>{item.fields.description}</Description>
+          </ItemContainer>
+        </div>
+      )
+    })
 
-    // <Layout>
-    //   <PhotoGrid>
-    //   {/* <ItemContainer> */}
-    //       {/* <Title>{title}</Title> */}
-    //       {/* <Photo src={photo} /> */}
-    //       {/* <Description>{description}</Description> */}
-    //     {/* </ItemContainer> */}
-    //     <ItemContainer>
-    //       <Photo src="https://i.imgur.com/CosJK9o.jpg" />
-    //     </ItemContainer>
-    //     <ItemContainer>
-    //       <Title></Title>
-    //       <Photo src="https://i.imgur.com/tu0FRyn.jpg" />
-    //     </ItemContainer>
-    //     <ItemContainer>
-    //       <Title></Title>
-    //       <Photo src="https://i.imgur.com/wSqiQim.jpg" />
-    //     </ItemContainer>
-    //     <ItemContainer>
-    //       <Title></Title>
-    //       <Photo src="https://i.imgur.com/n8JRfj5.jpg" />
-    //     </ItemContainer>
-    //     <ItemContainer>
-    //       <Title></Title>
-    //       <Photo src="https://i.imgur.com/nMt8jsA.jpg" />
-    //     </ItemContainer>
-    //   </PhotoGrid>
-    // </Layout>
-    //  )
- }
+    return (
+      <Layout>
+        <PhotoGrid>{photos}</PhotoGrid>
+      </Layout>
+    )
+  }
 }
-
-
 
 export default Portfolio
