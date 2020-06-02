@@ -21,7 +21,7 @@ export const ImageQuery = graphql`
 
 console.log(ImageQuery)
 
-const URL = "https://cdn.contentful.com/spaces/hkey7bq8d8xc/entries?access_token=bRB059jwbB4MphUkzedacei1ZQze8uxraRhh-pDSVIQ"
+// const URL = "https://cdn.contentful.com/spaces/hkey7bq8d8xc/entries?access_token=bRB059jwbB4MphUkzedacei1ZQze8uxraRhh-pDSVIQ"
 // fetch(URL)
 //   .then(response => response.json())
 
@@ -58,6 +58,9 @@ const Description = styled.div`
   text-align: center;
 `
 
+const URL = "https://cdn.contentful.com/spaces/hkey7bq8d8xc/entries?access_token=bRB059jwbB4MphUkzedacei1ZQze8uxraRhh-pDSVIQ"
+
+
 class Portfolio extends Component {
     constructor(props) {
         super(props);
@@ -73,12 +76,19 @@ class Portfolio extends Component {
         .then(res => res.json())
         .then(res => {
             this.setState({ data: res.includes.Asset });
+            this.state.data.map(code => {
+                this.setState({
+                  title: [...this.state.title, code.fields.title]
+                });
+                this.setState({ imageURL: [...this.state.imageURL, code.fields.file.url] });
+                this.setState({ description: [...this.state.description, code.fields.description] });
+            });
             console.log(res.includes.Asset);
-        })
+              });
+        }
 
         // .then(res => console.log(res.includes.Asset));
 
-    }
 
     
  render() {
