@@ -95,15 +95,11 @@ class Portfolio extends Component {
  render() {
     let photos = this.state.data.map(item => {
         return (
-          <div key={item.sys.codes}>
-              <div
-                className="image"
-                style={{ backgroundImage: `url(${item.fields.file.url})` }}
-                >
-                <h4 className="title">{item.fields.title}</h4>
-                <h4 className="description">{item.fields.description}</h4>
-              </div>
-          </div>
+          <ItemContainer key={item.sys.codes}>
+              <Title>{item.fields.title}</Title>
+              <Photo src={item.fields.file.url} />
+                <Description>{item.fields.description}</Description>
+          </ItemContainer>
         );
       });
          
@@ -113,9 +109,7 @@ class Portfolio extends Component {
 
      return <Layout>
          <PhotoGrid>
-             <ItemContainer>
             <div className="images">{photos}</div>;
-             </ItemContainer>
          </PhotoGrid>
             </Layout>
 
