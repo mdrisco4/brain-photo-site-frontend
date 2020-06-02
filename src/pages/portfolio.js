@@ -32,6 +32,7 @@ padding-top: 20px;
 const Title = styled.div`
   text-align: center;
   color: white;
+  font-size: 28px;
 `
 
 const Photo = styled.img`
@@ -39,11 +40,15 @@ const Photo = styled.img`
   margin-top: 24px;
   margin-left: 20%;
   margin-right: 20%;
+  &:hover {
+    width: 90%;
+  }
 `
 
 const Description = styled.div`
   text-align: center;
   color: white;
+  font-size: 28px;
 `
 
 const URL =
