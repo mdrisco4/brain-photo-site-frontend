@@ -62,19 +62,21 @@ class Portfolio extends Component {
     constructor(props) {
         super(props);
         this.state = {
-            data: []
+            data: [],
+            title: [],
+            imageURL: [],
+            description: []
         };
     }
     componentDidMount() {
         fetch(URL)
         .then(res => res.json())
-        // .then(res => {
-        //     this.setState({ data: res.includes.Asset });
-        // }
-        // )
+        .then(res => {
+            this.setState({ data: res.includes.Asset });
+            console.log(res.includes.Asset);
+        })
 
-
-        .then(res => console.log(res.includes.Asset));
+        // .then(res => console.log(res.includes.Asset));
 
     }
 
