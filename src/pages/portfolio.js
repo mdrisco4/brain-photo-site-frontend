@@ -66,6 +66,7 @@ class Portfolio extends Component {
         super(props);
         this.state = {
             data: [],
+            codes: [],
             title: [],
             imageURL: [],
             description: []
@@ -77,13 +78,13 @@ class Portfolio extends Component {
         .then(res => {
             this.setState({ data: res.includes.Asset });
             this.state.data.map(code => {
-                this.setState({
-                  title: [...this.state.title, code.fields.title]
-                });
+                this.setState({ codes: [...this.state.codes, code.sys.id] });
+                this.setState({ title: [...this.state.title, code.fields.title] });
                 this.setState({ imageURL: [...this.state.imageURL, code.fields.file.url] });
                 this.setState({ description: [...this.state.description, code.fields.description] });
             });
             console.log(res.includes.Asset);
+            console.log(this.state.codes)
               });
         }
 
@@ -92,38 +93,61 @@ class Portfolio extends Component {
 
     
  render() {
-
+    let photos = this.state.data.map(item => {
+        return (
+          <div key={item.sys.codes}>
+              <div
+                className="image"
+                style={{ backgroundImage: `url(${item.fields.file.url})` }}
+                >
+                <h4 className="title">{item.fields.title}</h4>
+                <h4 className="description">{item.fields.description}</h4>
+              </div>
+          </div>
+        );
+      });
          
-     return (
-    <Layout>
-      <PhotoGrid>
-      {/* <ItemContainer> */}
-          {/* <Title>{title}</Title> */}
-          {/* <Photo src={photo} /> */}
-          {/* <Description>{description}</Description> */}
-        {/* </ItemContainer> */}
-        <ItemContainer>
-          <Photo src="https://i.imgur.com/CosJK9o.jpg" />
-        </ItemContainer>
-        <ItemContainer>
-          <Title></Title>
-          <Photo src="https://i.imgur.com/tu0FRyn.jpg" />
-        </ItemContainer>
-        <ItemContainer>
-          <Title></Title>
-          <Photo src="https://i.imgur.com/wSqiQim.jpg" />
-        </ItemContainer>
-        <ItemContainer>
-          <Title></Title>
-          <Photo src="https://i.imgur.com/n8JRfj5.jpg" />
-        </ItemContainer>
-        <ItemContainer>
-          <Title></Title>
-          <Photo src="https://i.imgur.com/nMt8jsA.jpg" />
-        </ItemContainer>
-      </PhotoGrid>
-    </Layout>
-     )
+
+
+
+
+     return <Layout>
+         <PhotoGrid>
+             <ItemContainer>
+            <div className="images">{photos}</div>;
+             </ItemContainer>
+         </PhotoGrid>
+            </Layout>
+
+    // <Layout>
+    //   <PhotoGrid>
+    //   {/* <ItemContainer> */}
+    //       {/* <Title>{title}</Title> */}
+    //       {/* <Photo src={photo} /> */}
+    //       {/* <Description>{description}</Description> */}
+    //     {/* </ItemContainer> */}
+    //     <ItemContainer>
+    //       <Photo src="https://i.imgur.com/CosJK9o.jpg" />
+    //     </ItemContainer>
+    //     <ItemContainer>
+    //       <Title></Title>
+    //       <Photo src="https://i.imgur.com/tu0FRyn.jpg" />
+    //     </ItemContainer>
+    //     <ItemContainer>
+    //       <Title></Title>
+    //       <Photo src="https://i.imgur.com/wSqiQim.jpg" />
+    //     </ItemContainer>
+    //     <ItemContainer>
+    //       <Title></Title>
+    //       <Photo src="https://i.imgur.com/n8JRfj5.jpg" />
+    //     </ItemContainer>
+    //     <ItemContainer>
+    //       <Title></Title>
+    //       <Photo src="https://i.imgur.com/nMt8jsA.jpg" />
+    //     </ItemContainer>
+    //   </PhotoGrid>
+    // </Layout>
+    //  )
  }
 }
 
