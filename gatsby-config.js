@@ -1,10 +1,10 @@
-const dotenv = require(`dotenv`)
+// const dotenv = require(`dotenv`)
 
-if (process.env.NODE_ENV !== 'production') {
-  dotenv.config()
-}
+// if (process.env.NODE_ENV !== 'production') {
+//   dotenv.config()
+// }
 
-// require(`dotenv`).config();
+require(`dotenv`).config();
 
 module.exports = {
   siteMetadata: {
@@ -39,7 +39,7 @@ module.exports = {
       resolve: `gatsby-source-contentful`,
       options: {
         spaceId: `hkey7bq8d8xc`,
-        accessToken: process.env.CONTENTFUL_ACCESS_TOKEN
+        accessToken: 'bRB059jwbB4MphUkzedacei1ZQze8uxraRhh-pDSVIQ'
       }
     },
     // this (optional) plugin enables Progressive Web App + Offline functionality
