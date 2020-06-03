@@ -50,9 +50,12 @@ const Photo = styled.img`
   width: 70%;
   margin-top: 24px;
   margin-left: 15%;
+  transition: transform .5s ease;
   &:hover {
-    width: 100%;
-    margin-left: 0;
+    /* transition: transform .5s ease; */
+    /* width: 100%; */
+    transform: scale(1.45);
+    /* margin-left: 0; */
   }
 `
 

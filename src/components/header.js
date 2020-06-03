@@ -1,6 +1,6 @@
 import React from "react"
 import styled from "styled-components"
-// import Burger from "../Hamburger/Hamburger"
+import Burger from "./Menu/Navbar.js"
 // import { Link } from "gatsby"
 // import PropTypes from "prop-types"
 
@@ -9,19 +9,20 @@ import { fas } from "@fortawesome/free-solid-svg-icons"
 import { far } from "@fortawesome/free-regular-svg-icons"
 import { fab } from "@fortawesome/free-brands-svg-icons"
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome"
+import Navbar from "./Menu/Navbar.js"
 
 library.add(fab, fas, far)
 
 const Nav = styled.div`
   background: rgb(113, 84, 58);
   margin: 0;
-  height: 90px;
+  height: 110px;
 `
 
 const IconLink = styled.a`
   color: rgb(216, 100, 52);
   font-size: 60px;
-  padding-right: 50%;
+  margin-right: 39%;
   text-decoration: "none";
   filter: drop-shadow(2px 2px black);
   &:hover {
@@ -60,9 +61,15 @@ const Header = () => (
       <IconLink href="/">
         <FontAwesomeIcon icon={["fas", "camera-retro"]} size="1x" />
       </IconLink>
-      <HeaderLink href="/portfolio/">Portfolio</HeaderLink>
+      {/* <IconLink> */}
+      {/* <FontAwesomeIcon icon={["fas", "bars"]} size="3x" /> */}
+      {/* <i class="fas fa-bars"></i> */}
+      {/* </IconLink> */}
+      {/* <Burger/> */}
+      <Navbar/>
+      {/* <HeaderLink href="/portfolio/">Portfolio</HeaderLink>
       <HeaderLink href="/about/">About</HeaderLink>
-      <HeaderLink href="/contact/">Contact</HeaderLink>
+      <HeaderLink href="/contact/">Contact</HeaderLink> */}
     </div>
   </Nav>
 )
