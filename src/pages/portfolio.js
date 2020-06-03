@@ -1,7 +1,7 @@
 import React, { Component } from "react"
 import styled from "styled-components"
-import { graphql } from "gatsby"
-import { Link } from "gatsby"
+// import { graphql } from "gatsby"
+// import { Link } from "gatsby"
 
 import Layout from "../components/layout"
 
@@ -54,6 +54,10 @@ const Photo = styled.img`
     width: 100%;
     margin-left: 0;
   }
+`
+
+const ImageLink = styled.a`
+
 `
 
 const Description = styled.div`
@@ -128,9 +132,9 @@ class Portfolio extends Component {
         <div key={item.sys.codes}>
           <ItemContainer>
             <Title>{item.fields.title}</Title>
-            <Link to={"/ImagePage/" + item.sys.codes} className="image">
+            {/* <ImageLink href={"/ImagePage/" + item.sys.codes} className="image"> */}
             <Photo src={item.fields.file.url} />
-            </Link>
+            {/* </ImageLink> */}
             <Description>{item.fields.description}</Description>
           </ItemContainer>
         </div>

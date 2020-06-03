@@ -15,12 +15,13 @@ library.add(fab, fas, far)
 const Nav = styled.div`
   background: rgb(113, 84, 58);
   margin: 0;
-  height: 140px;
+  height: 90px;
 `
 
 const IconLink = styled.a`
   color: rgb(216, 100, 52);
   font-size: 60px;
+  padding-right: 50%;
   text-decoration: "none";
   filter: drop-shadow(2px 2px black);
   &:hover {
@@ -31,10 +32,10 @@ const IconLink = styled.a`
 
 const HeaderLink = styled.a`
   color: rgb(216, 100, 52);
-  font-size: 60px;
+  font-size: 36px;
   text-decoration: none;
   text-shadow: 2px 2px black;
-  padding-top: 28px;
+  padding-top: 15px;
   font-weight: bold;
   &:hover {
     color: black;
@@ -57,7 +58,7 @@ const Header = () => (
     <FontAwesomeIcon icon={["fas", "bars"]} size="3x" /> */}
 
       <IconLink href="/">
-        <FontAwesomeIcon icon={["fas", "camera-retro"]} size="2x" />
+        <FontAwesomeIcon icon={["fas", "camera-retro"]} size="1x" />
       </IconLink>
       <HeaderLink href="/portfolio/">Portfolio</HeaderLink>
       <HeaderLink href="/about/">About</HeaderLink>

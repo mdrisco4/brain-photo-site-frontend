@@ -1,7 +1,7 @@
 import React, { Component } from "react"
 import styled from "styled-components"
-import { Link } from "react-router-dom"
-import Layout from "../components/layout"
+// import { Link } from "react-router-dom"
+// import Layout from "../components/layout"
 
 const URL =
   "https://cdn.contentful.com/spaces/hkey7bq8d8xc/entries?access_token=bRB059jwbB4MphUkzedacei1ZQze8uxraRhh-pDSVIQ"
@@ -31,7 +31,9 @@ class ParkPage extends Component {
   }
   render() {
     return (
+        // <Layout>
       <image src="https://i.imgur.com/vOSBWlN.jpg"></image>
+        // </Layout>
     )
   }
 }
