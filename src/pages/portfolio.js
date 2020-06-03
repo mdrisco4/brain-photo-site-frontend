@@ -32,8 +32,11 @@ const PhotoGrid = styled.div`
   display: grid;
   @media (min-width: 575px) {
     grid-template-columns: 1fr 1fr;
+    margin-bottom: 80px;
 }
 @media (min-width: 900px) {
+    grid-template-columns: 1fr 1fr 1fr;
+    margin-bottom: 100px;
 }
 @media (min-width: 1200px) {
     grid-template-rows: 1fr 1fr;
@@ -45,11 +48,11 @@ const PhotoGrid = styled.div`
 const ItemContainer = styled.div`
   padding-top: 90px;
   transition: transform 0.8s ease;
-  @media (min-width: 768px) {
+  @media (min-width: 575px) {
   }
-  @media (min-width: 768px) {
+  @media (min-width: 900px) {
   }
-  @media (min-width: 768px) {
+  @media (min-width: 1200px) {
   }
   &:hover {
     transform: scale(1.45);
@@ -65,11 +68,14 @@ const Title = styled.div`
   text-shadow: 1px 1px rgb(216, 100, 52);
   font-size: 30px;
   font-weight: bold;
-  @media (min-width: 768px) {
+  @media (min-width: 575px) {
+      font-size: 18px;
   }
-  @media (min-width: 768px) {
+  @media (min-width: 900px) {
+    font-size: 24px;
   }
-  @media (min-width: 768px) {
+  @media (min-width: 1100px) {
+    font-size: 30px;
   }
 `
 
@@ -77,11 +83,11 @@ const Photo = styled.img`
   width: 70%;
   margin-top: 24px;
   margin-left: 15%;
-  @media (min-width: 768px) {
+  @media (min-width: 575px) {
   }
-  @media (min-width: 768px) {
+  @media (min-width: 900px) {
   }
-  @media (min-width: 768px) {
+  @media (min-width: 1200px) {
   }
 `
 
@@ -95,11 +101,14 @@ const Description = styled.div`
   text-shadow: 1px 1px rgb(216, 100, 52);
   font-size: 25px;
   font-weight: bold;
-  @media (min-width: 768px) {
+  @media (min-width: 575px) {
+      font-size: 16px;
   }
-  @media (min-width: 768px) {
+  @media (min-width: 900px) {
+    font-size: 21px;
   }
-  @media (min-width: 768px) {
+  @media (min-width: 1100px) {
+    font-size: 27px;
   }
 `
 
@@ -110,11 +119,11 @@ font-family: "Audiowide", cursive;
   font-weight: bold;
   /* padding: 0; */
   /* text-shadow: 1px 1px rgb(216, 100, 52); */
-  @media (min-width: 768px) {
+  @media (min-width: 575px) {
   }
-  @media (min-width: 768px) {
+  @media (min-width: 900px) {
   }
-  @media (min-width: 768px) {
+  @media (min-width: 1200px) {
   }
 `
 
@@ -129,11 +138,11 @@ const EmailLink = styled.a`
   margin-top: 24px;
   font-weight: bold;
   text-shadow: 2px 2px rgb(216, 100, 52);
-  @media (min-width: 768px) {
+  @media (min-width: 575px) {
   }
-  @media (min-width: 768px) {
+  @media (min-width: 900px) {
   }
-  @media (min-width: 768px) {
+  @media (min-width: 1200px) {
   }
   &:hover {
     color: rgb(216, 100, 52);
