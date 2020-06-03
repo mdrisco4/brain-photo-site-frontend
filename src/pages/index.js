@@ -31,7 +31,8 @@ const Title = styled.div`
 
 const Intro = styled.div`
   text-align: right;
-  font-size: 24px;
+  font-size: 28px;
+  padding-left: 10%;
 `
 
 const Headshot = styled.img`
