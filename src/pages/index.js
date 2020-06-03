@@ -41,8 +41,10 @@ const Name = styled.div`
     font-size: 48px;
   }
   @media (min-width: 930px) {
+    font-size: 35px;
   }
   @media (min-width: 1200px) {
+    font-size: 51px;
     text-align: right;
   }
 `
@@ -56,6 +58,7 @@ const Title = styled.div`
     font-size: 42px;
   }
   @media (min-width: 930px) {
+    font-size: 28px;
   }
   @media (min-width: 1200px) {
     text-align: right;
@@ -72,8 +75,10 @@ const Intro = styled.div`
     font-size: 32px;
   }
   @media (min-width: 930px) {
+    font-size: 20px;
   }
   @media (min-width: 1200px) {
+    font-size: 24px;
     padding-left: 10%;
     text-align: right;
   }

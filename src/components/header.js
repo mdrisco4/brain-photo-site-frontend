@@ -31,7 +31,7 @@ const IconLink = styled.a`
     margin-right: 7%;
   }
   @media (min-width: 1200px) {
-    margin-right: 32%;
+    margin-right: 20%;
   }
   &:hover {
     color: goldenrod;

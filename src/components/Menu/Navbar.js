@@ -59,9 +59,9 @@ const Navbox = styled.div`
     width: 100%;
     justify-content: flex-start;
     padding-top: 10vh;
-    background-color: #fff;
+    background-color: rgb(113, 84, 58);
     transition: all 0.3s ease-in;
-    top: 8vh;
+    top: 12vh;
     left: ${props => (props.open ? "-100%" : "0")};
   }
 `
