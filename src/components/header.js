@@ -23,6 +23,7 @@ const IconLink = styled.a`
   color: black;
   font-size: 60px;
   padding-top: 10px;
+  padding-left: 2%;
   text-decoration: "none";
   @media (min-width: 768px) {
     margin-right: 0;

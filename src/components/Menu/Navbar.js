@@ -1,7 +1,7 @@
 import React, { useState } from "react"
 import NavbarLinks from "./NavbarLinks"
 import Logo from "./Logo"
-import styled from 'styled-components' 
+import styled from "styled-components"
 
 import { library } from "@fortawesome/fontawesome-svg-core"
 import { fas } from "@fortawesome/free-solid-svg-icons"
@@ -10,8 +10,6 @@ import { fab } from "@fortawesome/free-brands-svg-icons"
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome"
 
 library.add(fab, fas, far)
-
-
 
 const Navigation = styled.nav`
   height: 10vh;
@@ -40,7 +38,24 @@ const Toggle = styled.div`
   display: none;
   height: 100%;
   cursor: pointer;
-  padding: 0 10vw;
+  padding: 0 6.5vw;
+  margin-left: 140%;
+  @media (min-width: 480px) {
+    padding: 0;
+    margin-left: 500%;
+  }
+  @media (min-width: 575px) {
+    /* padding: 0 16.5vw; */
+    margin-left: 650%;
+  }
+  @media (min-width: 625px) {
+    /* padding: 0 27vw; */
+    margin-left: 750%;
+  }
+  @media (min-width: 700px) {
+    /* padding: 0 28vw; */
+    margin-left: 825%;
+  }
 
   @media (max-width: 768px) {
     display: flex;
@@ -70,9 +85,10 @@ const Hamburger = styled.div`
   background-color: #111;
   width: 30px;
   height: 3px;
-  transition: all .3s linear;
+  transition: all 0.3s linear;
   align-self: center;
   position: relative;
+  margin-left: 0;
   transform: ${props => (props.open ? "rotate(-45deg)" : "inherit")};
 
   ::before,
@@ -97,7 +113,6 @@ const Hamburger = styled.div`
     top: 10px;
   }
 `
-
 
 const Navbar = () => {
   const [navbarOpen, setNavbarOpen] = useState(false)

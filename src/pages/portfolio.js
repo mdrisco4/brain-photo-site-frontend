@@ -30,14 +30,27 @@ const Prompt = styled.div`
 
 const PhotoGrid = styled.div`
   display: grid;
-  grid-template-rows: 1fr 1fr;
-  grid-template-columns: 1fr 1fr 1fr;
-  margin: 40px 0 120px 0;
+  @media (min-width: 575px) {
+    grid-template-columns: 1fr 1fr;
+}
+@media (min-width: 900px) {
+}
+@media (min-width: 1200px) {
+    grid-template-rows: 1fr 1fr;
+    grid-template-columns: 1fr 1fr 1fr;
+    margin: 40px 0 120px 0;
+  }
 `
 
 const ItemContainer = styled.div`
   padding-top: 90px;
   transition: transform 0.8s ease;
+  @media (min-width: 768px) {
+  }
+  @media (min-width: 768px) {
+  }
+  @media (min-width: 768px) {
+  }
   &:hover {
     transform: scale(1.45);
     margin: 0;
@@ -52,12 +65,24 @@ const Title = styled.div`
   text-shadow: 1px 1px rgb(216, 100, 52);
   font-size: 30px;
   font-weight: bold;
+  @media (min-width: 768px) {
+  }
+  @media (min-width: 768px) {
+  }
+  @media (min-width: 768px) {
+  }
 `
 
 const Photo = styled.img`
   width: 70%;
   margin-top: 24px;
   margin-left: 15%;
+  @media (min-width: 768px) {
+  }
+  @media (min-width: 768px) {
+  }
+  @media (min-width: 768px) {
+  }
 `
 
 const ImageLink = styled.a``
@@ -70,15 +95,27 @@ const Description = styled.div`
   text-shadow: 1px 1px rgb(216, 100, 52);
   font-size: 25px;
   font-weight: bold;
+  @media (min-width: 768px) {
+  }
+  @media (min-width: 768px) {
+  }
+  @media (min-width: 768px) {
+  }
 `
 
 const ContactPrompt = styled.div`
 font-family: "Audiowide", cursive;
   text-align: center;
-  font-size: 36px;
+  font-size: 20px;
   font-weight: bold;
-  padding: 0 20%;
+  /* padding: 0; */
   /* text-shadow: 1px 1px rgb(216, 100, 52); */
+  @media (min-width: 768px) {
+  }
+  @media (min-width: 768px) {
+  }
+  @media (min-width: 768px) {
+  }
 `
 
 const EmailLink = styled.a`
@@ -88,10 +125,16 @@ const EmailLink = styled.a`
   margin-left: auto;
   margin-right: auto;
   text-align: center;
-  font-size: 36px;
+  font-size: 20px;
   margin-top: 24px;
   font-weight: bold;
   text-shadow: 2px 2px rgb(216, 100, 52);
+  @media (min-width: 768px) {
+  }
+  @media (min-width: 768px) {
+  }
+  @media (min-width: 768px) {
+  }
   &:hover {
     color: rgb(216, 100, 52);
     text-shadow: 2px 2px black;
