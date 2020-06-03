@@ -9,12 +9,14 @@ const Section = styled.div`
   text-align: center;
   font-size: 52px;
   margin-top: 20px;
+  font-family: cursive;
 `
 
 const SectionInfo = styled.div`
   text-align: center;
   font-size: 36px;
   margin-top: 20px;
+  font-family: cursive;
 `
 
 const About = () => (
