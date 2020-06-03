@@ -10,6 +10,7 @@ import Layout from "../components/layout"
 const HomeContainer = styled.div`
   display: flex;
   flex-direction: column-reverse;
+  /* background-image: url('http://images.ctfassets.net/hkey7bq8d8xc/2d2siJGRM2EXx3MMe8N7bn/00f27a790b6ea402db28d6a05942bd27/DSCN0415.JPG'); */
   @media (min-width: 850px) {
   }
   @media (min-width: 930px) {
@@ -35,7 +36,8 @@ const Name = styled.div`
   width: 100%;
   font-size: 40px;
   padding-top: 12px;
-  color: black;
+  color: white;
+  text-shadow: 2px 2px black;
   text-align: center;
   @media (min-width: 768px) {
     font-size: 48px;
@@ -54,6 +56,8 @@ const Title = styled.div`
   padding-top: 25px;
   text-align: center;
   font-size: 36px;
+  color: white;
+  text-shadow: 2px 2px black;
   @media (min-width: 768px) {
     font-size: 42px;
   }
@@ -71,6 +75,8 @@ const Intro = styled.div`
   font-size: 24px;
   text-align: center;
   padding: 0 3%;
+  color: white;
+  text-shadow: 2px 2px black;
   @media (min-width: 768px) {
     font-size: 32px;
   }
@@ -98,9 +104,15 @@ const Headshot = styled.img`
   @media (min-width: 1400px) {
   }
 `
+const FrontPagePic = styled.div`
+  background-image: url('http://images.ctfassets.net/hkey7bq8d8xc/G2LNMkaVlx8PzFI4pNiiO/abd3d55f88cd8ccb20135605c32582ff/DSC_0204.JPG');
+  background-size: cover;
+  padding-bottom: 400px;
+`
 
 const IndexPage = () => (
   <Layout>
+    <FrontPagePic>
     <HomeContainer>
       <TextContainer>
         <Name>Brian Fragnoli</Name>
@@ -109,6 +121,7 @@ const IndexPage = () => (
       </TextContainer>
       <Headshot src="https://i.imgur.com/vOSBWlN.jpg" />
     </HomeContainer>
+  </FrontPagePic>
   </Layout>
 )
 

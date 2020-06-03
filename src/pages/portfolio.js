@@ -64,8 +64,8 @@ const Title = styled.div`
   font-family: "Patrick Hand", cursive;
   padding: 0 15%;
   text-align: center;
-  color: black;
-  text-shadow: 1px 1px rgb(216, 100, 52);
+  color: white;
+  text-shadow: 2px 2px black;
   font-size: 30px;
   font-weight: bold;
   @media (min-width: 575px) {
@@ -97,8 +97,8 @@ const Description = styled.div`
   font-family: "Patrick Hand", cursive;
   padding: 0 15%;
   text-align: center;
-  color: black;
-  text-shadow: 1px 1px rgb(216, 100, 52);
+  color: white;
+  text-shadow: 2px 2px black;
   font-size: 25px;
   font-weight: bold;
   @media (min-width: 575px) {
@@ -137,16 +137,17 @@ const EmailLink = styled.a`
   font-size: 20px;
   margin-top: 24px;
   font-weight: bold;
-  text-shadow: 2px 2px rgb(216, 100, 52);
+  text-shadow: 1px 1px white;
   @media (min-width: 575px) {
   }
   @media (min-width: 900px) {
   }
+  font-size: 30px;
   @media (min-width: 1200px) {
   }
   &:hover {
-    color: rgb(216, 100, 52);
-    text-shadow: 2px 2px black;
+    color: white;
+    text-shadow: 1px 1px black;
   }
 `
 

@@ -6,7 +6,8 @@ import "../../Styles/fonts.css"
 const NavItem = styled(Link)`
 font-family: "Audiowide", cursive;
   text-decoration: none;
-  color: #111;
+  /* color: #111; */
+  color: white;
   display: inline-block;
   white-space: nowrap;
   margin: 0 1vw;

@@ -36,8 +36,10 @@ const Layout = ({ children }) => {
       <div
         style={{
           margin: `0`,
-          backgroundColor: "rgb(42, 97, 24)",
-          border: "5px solid rgb(42, 97, 24)",
+          // backgroundColor: "rgb(42, 97, 24)",
+          backgroundColor: "#333",
+          // border: "5px solid rgb(42, 97, 24)",
+          border: "5px solid #333",
           minHeight: "1200px",
         }}
         >

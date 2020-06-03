@@ -14,7 +14,8 @@ library.add(fab, fas, far)
 const Navigation = styled.nav`
   height: 10vh;
   display: flex;
-  background-color: rgb(113, 84, 58);
+  /* background-color: rgb(113, 84, 58); */
+  background-color: black;
   position: relative;
   justify-content: space-between;
   text-transform: uppercase;

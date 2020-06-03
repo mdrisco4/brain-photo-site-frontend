@@ -27,9 +27,9 @@ font-family: 'Krona One', sans-serif;
   font-size: 45px;
   margin-top: 24px;
   font-weight: bold;
-  text-shadow: 2px 2px rgb(216, 100, 52);
+  text-shadow: 2px 2px white;
   &:hover {
-    color: rgb(216, 100, 52);
+    color: white;
     text-shadow: 2px 2px black;
   }
 `

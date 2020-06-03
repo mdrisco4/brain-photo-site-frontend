@@ -14,13 +14,14 @@ import Navbar from "./Menu/Navbar.js"
 library.add(fab, fas, far)
 
 const Nav = styled.div`
-  background: rgb(113, 84, 58);
+  /* background: rgb(113, 84, 58); */
+  background: black;
   margin: 0;
   height: 110px;
 `
 
 const IconLink = styled.a`
-  color: black;
+  color: white;
   font-size: 60px;
   padding-top: 10px;
   padding-left: 2%;
