@@ -36,6 +36,11 @@ module.exports = {
       },
     },
     {
+      resolve: `gatsby-plugin-styled-components`,
+      options: {
+      },
+    },
+    {
       resolve: `gatsby-source-contentful`,
       options: {
         spaceId: `hkey7bq8d8xc`,
