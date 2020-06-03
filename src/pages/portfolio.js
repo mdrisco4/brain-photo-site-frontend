@@ -19,6 +19,12 @@ import Layout from "../components/layout"
 //   }
 // `
 
+const Prompt = styled.div`
+text-align: center;
+font-size: 36px;
+font-weight: bold;
+`
+
 const PhotoGrid = styled.div`
   display: grid;
   grid-template-rows: 1fr 1fr;
@@ -31,26 +37,28 @@ padding-top: 20px;
 
 const Title = styled.div`
   text-align: center;
-  color: white;
-  font-size: 28px;
+  color: black;
+  text-shadow: 1px 1px rgb(216, 100, 52);
+  font-size: 24px;
+  font-weight: bold;
 `
 
 const Photo = styled.img`
   width: 70%;
   margin-top: 24px;
   margin-left: 15%;
-  /* margin-right: auto; */
   &:hover {
-    width: 90%;
-    margin-left: 5%;
-    /* margin-right: auto; */
+    width: 100%;
+    margin-left: 0;
   }
 `
 
 const Description = styled.div`
   text-align: center;
-  color: white;
-  font-size: 28px;
+  color: black;
+  text-shadow: 1px 1px rgb(216, 100, 52);
+  font-size: 20px;
+  font-weight: bold;
 `
 
 const URL =
@@ -101,7 +109,8 @@ class Portfolio extends Component {
     })
 
     return (
-      <Layout>
+        <Layout>
+        <Prompt>Handpicked examples of my favorite work</Prompt>
         <PhotoGrid>{photos}</PhotoGrid>
       </Layout>
     )
