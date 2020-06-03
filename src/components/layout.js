@@ -27,12 +27,12 @@ const Layout = ({ children }) => {
 
   return (
     <>
+          <Header />
       <body
         style={{
           margin: "0",
         }}
       >
-      <Header />
       <div
         style={{
           margin: `0`,
