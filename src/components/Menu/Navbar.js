@@ -41,6 +41,7 @@ const Toggle = styled.div`
   cursor: pointer;
   padding: 0 6.5vw;
   margin-left: 140%;
+  /* color: white; */
   @media (min-width: 480px) {
     padding: 0;
     margin-left: 500%;
@@ -75,7 +76,7 @@ const Navbox = styled.div`
     width: 100%;
     justify-content: flex-start;
     padding-top: 10vh;
-    background-color: rgb(113, 84, 58);
+    background-color: white;
     transition: all 0.3s ease-in;
     top: 12vh;
     left: ${props => (props.open ? "-100%" : "0")};
@@ -83,7 +84,7 @@ const Navbox = styled.div`
 `
 
 const Hamburger = styled.div`
-  background-color: #111;
+  background-color: white;
   width: 30px;
   height: 3px;
   transition: all 0.3s linear;
@@ -96,7 +97,7 @@ const Hamburger = styled.div`
   ::after {
     width: 30px;
     height: 3px;
-    background-color: #111;
+    background-color: white;
     content: "";
     position: absolute;
     transition: all 0.3s linear;

@@ -7,7 +7,7 @@ const NavItem = styled(Link)`
 font-family: "Audiowide", cursive;
   text-decoration: none;
   /* color: #111; */
-  color: white;
+  color: black;
   display: inline-block;
   white-space: nowrap;
   margin: 0 1vw;
@@ -15,6 +15,7 @@ font-family: "Audiowide", cursive;
   position: relative;
   font-size: 24px;
   @media (min-width: 768px) {
+      color: white;
   }
   @media (min-width: 930px) {
       font-size: 30px;

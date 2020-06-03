@@ -55,7 +55,7 @@ const ItemContainer = styled.div`
   @media (min-width: 1200px) {
   }
   &:hover {
-    transform: scale(1.45);
+    transform: scale(1.4);
     margin: 0;
   }
 `
@@ -77,12 +77,17 @@ const Title = styled.div`
   @media (min-width: 1100px) {
     font-size: 30px;
   }
+  /* &:hover {
+      color: goldenrod;
+  } */
 `
 
 const Photo = styled.img`
   width: 70%;
   margin-top: 24px;
   margin-left: 15%;
+  border: 2px solid white;
+  border-radius: 4px;
   @media (min-width: 575px) {
   }
   @media (min-width: 900px) {
