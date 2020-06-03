@@ -27,11 +27,11 @@ const Layout = ({ children }) => {
 
   return (
     <>
-      {/* <body
+      <body
         style={{
           margin: "0",
         }}
-      ></body> */}
+      >
       <Header />
       <div
         style={{
@@ -40,9 +40,10 @@ const Layout = ({ children }) => {
           border: "5px solid rgb(42, 97, 24)",
           minHeight: "1200px",
         }}
-      >
+        >
         <main>{children}</main>
       </div>
+        </body>
     </>
   )
 }
