@@ -1,5 +1,6 @@
 import React, { Component } from "react"
 import styled from "styled-components"
+import "../Styles/fonts.css"
 // import { graphql } from "gatsby"
 // import { Link } from "gatsby"
 
@@ -39,15 +40,17 @@ const ItemContainer = styled.div`
   transition: transform 0.8s ease;
   &:hover {
     transform: scale(1.45);
+    margin: 0;
   }
 `
 
 const Title = styled.div`
+  font-family: "Patrick Hand", cursive;
   padding: 0 15%;
   text-align: center;
   color: black;
   text-shadow: 1px 1px rgb(216, 100, 52);
-  font-size: 24px;
+  font-size: 30px;
   font-weight: bold;
 `
 
@@ -60,19 +63,22 @@ const Photo = styled.img`
 const ImageLink = styled.a``
 
 const Description = styled.div`
+  font-family: "Patrick Hand", cursive;
   padding: 0 15%;
   text-align: center;
   color: black;
   text-shadow: 1px 1px rgb(216, 100, 52);
-  font-size: 20px;
+  font-size: 25px;
   font-weight: bold;
 `
 
 const ContactPrompt = styled.div`
+font-family: "Audiowide", cursive;
   text-align: center;
   font-size: 36px;
   font-weight: bold;
-  text-shadow: 1px 1px rgb(216, 100, 52);
+  padding: 0 20%;
+  /* text-shadow: 1px 1px rgb(216, 100, 52); */
 `
 
 const EmailLink = styled.a`

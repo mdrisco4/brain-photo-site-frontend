@@ -23,7 +23,7 @@ const IconLink = styled.a`
   /* color: rgb(216, 100, 52); */
   color: black;
   font-size: 60px;
-  margin-right: 39%;
+  margin-right: 32%;
   padding-top: 10px;
   text-decoration: "none";
   /* filter: drop-shadow(2px 2px rgb(42, 97, 24)); */

@@ -1,5 +1,6 @@
 import React from "react"
 import styled from "styled-components"
+import "../Styles/fonts.css"
 
 // import { Link } from "gatsby"
 
@@ -7,6 +8,7 @@ import Layout from "../components/layout"
 // import SEO from "../components/seo"
 
 const ContactPrompt = styled.div`
+font-family: 'Krona One', sans-serif;
   text-align: center;
   width: 80%;
   font-size: 56px;
@@ -15,6 +17,7 @@ const ContactPrompt = styled.div`
 `
 
 const EmailLink = styled.a`
+font-family: 'Krona One', sans-serif;
   color: black;
   text-decoration: none;
   display: block;
@@ -32,18 +35,19 @@ const EmailLink = styled.a`
 `
 
 const Info = styled.div`
+font-family: 'Krona One', sans-serif;
   text-align: center;
   font-size: 45px;
   margin-top: 24px;
   font-weight: bold;
-  text-shadow: 1px 1px rgb(216, 100, 52);
+  /* text-shadow: 1px 1px rgb(216, 100, 52); */
 `
 
 const About = () => (
   <Layout>
     <ContactPrompt>
-      If you have any questions anout any of my work or would like to work with
-      me please contact me at:
+      If you have any questions about any of my work and want to know more
+      please contact me at:
     </ContactPrompt>
     <EmailLink href="mailto:beefrags1982@gmail.com" target="_blank">
       beefrags1982@gmail.com

@@ -1,7 +1,7 @@
 import React, { useState } from "react"
 import NavbarLinks from "./NavbarLinks"
 import Logo from "./Logo"
-import styled from 'styled-components'
+import styled from 'styled-components' 
 
 import { library } from "@fortawesome/fontawesome-svg-core"
 import { fas } from "@fortawesome/free-solid-svg-icons"

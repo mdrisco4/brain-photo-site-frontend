@@ -1,8 +1,10 @@
 import React from "react"
 import styled from "styled-components"
 import { Link } from "gatsby"
+import "../../Styles/fonts.css"
 
 const NavItem = styled(Link)`
+font-family: "Audiowide", cursive;
   text-decoration: none;
   color: #111;
   display: inline-block;
