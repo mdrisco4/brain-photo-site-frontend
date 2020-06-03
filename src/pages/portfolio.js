@@ -31,14 +31,19 @@ const PhotoGrid = styled.div`
   display: grid;
   grid-template-rows: 1fr 1fr;
   grid-template-columns: 1fr 1fr 1fr;
-  margin-bottom: 24px;
+  margin: 40px 0 120px 0;
 `
 
 const ItemContainer = styled.div`
-  padding-top: 20px;
+  padding-top: 60px;
+  transition: transform 0.8s ease;
+  &:hover {
+    transform: scale(1.45);
+  }
 `
 
 const Title = styled.div`
+  padding: 0 15%;
   text-align: center;
   color: black;
   text-shadow: 1px 1px rgb(216, 100, 52);
@@ -50,20 +55,12 @@ const Photo = styled.img`
   width: 70%;
   margin-top: 24px;
   margin-left: 15%;
-  transition: transform .5s ease;
-  &:hover {
-    /* transition: transform .5s ease; */
-    /* width: 100%; */
-    transform: scale(1.45);
-    /* margin-left: 0; */
-  }
 `
 
-const ImageLink = styled.a`
-
-`
+const ImageLink = styled.a``
 
 const Description = styled.div`
+  padding: 0 15%;
   text-align: center;
   color: black;
   text-shadow: 1px 1px rgb(216, 100, 52);
