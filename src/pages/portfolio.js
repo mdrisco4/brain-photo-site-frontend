@@ -38,10 +38,12 @@ const Title = styled.div`
 const Photo = styled.img`
   width: 70%;
   margin-top: 24px;
-  margin-left: 20%;
-  margin-right: 20%;
+  margin-left: 15%;
+  /* margin-right: auto; */
   &:hover {
     width: 90%;
+    margin-left: 5%;
+    /* margin-right: auto; */
   }
 `
 
