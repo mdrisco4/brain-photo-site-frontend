@@ -20,16 +20,21 @@ const Nav = styled.div`
 `
 
 const IconLink = styled.a`
-  /* color: rgb(216, 100, 52); */
   color: black;
   font-size: 60px;
-  margin-right: 32%;
   padding-top: 10px;
   text-decoration: "none";
-  /* filter: drop-shadow(2px 2px rgb(42, 97, 24)); */
+  @media (min-width: 768px) {
+    margin-right: 0;
+  }
+  @media (min-width: 930px) {
+    margin-right: 7%;
+  }
+  @media (min-width: 1200px) {
+    margin-right: 32%;
+  }
   &:hover {
     color: goldenrod;
-    /* filter: drop-shadow(2px 2px black); */
   }
 `
 

@@ -12,7 +12,14 @@ font-family: "Audiowide", cursive;
   margin: 0 1vw;
   transition: all 200ms ease-in;
   position: relative;
-  font-size: 28px;
+  font-size: 24px;
+  @media (min-width: 768px) {
+  }
+  @media (min-width: 930px) {
+      font-size: 30px;
+  }
+  @media (min-width: 850px) {
+  }
 
   :after {
     position: absolute;

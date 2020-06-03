@@ -12,9 +12,10 @@ const HomeContainer = styled.div`
   flex-direction: column-reverse;
   @media (min-width: 850px) {
   }
-  @media (min-width: 850px) {
+  @media (min-width: 930px) {
+    flex-direction: row;
   }
-  @media (min-width: 850px) {
+  @media (min-width: 1200px) {
   }
 `
 
@@ -22,9 +23,9 @@ const TextContainer = styled.div`
   padding-right: 2%;
   @media (min-width: 850px) {
   }
-  @media (min-width: 850px) {
+  @media (min-width: 930px) {
   }
-  @media (min-width: 850px) {
+  @media (min-width: 1200px) {
     width: 48%;
   }
 `
@@ -36,11 +37,12 @@ const Name = styled.div`
   padding-top: 12px;
   color: black;
   text-align: center;
-  @media (min-width: 850px) {
+  @media (min-width: 768px) {
+    font-size: 48px;
   }
-  @media (min-width: 850px) {
+  @media (min-width: 930px) {
   }
-  @media (min-width: 850px) {
+  @media (min-width: 1200px) {
     text-align: right;
   }
 `
@@ -50,11 +52,12 @@ const Title = styled.div`
   padding-top: 25px;
   text-align: center;
   font-size: 36px;
-  @media (min-width: 850px) {
+  @media (min-width: 768px) {
+    font-size: 42px;
   }
-  @media (min-width: 850px) {
+  @media (min-width: 930px) {
   }
-  @media (min-width: 850px) {
+  @media (min-width: 1200px) {
     text-align: right;
     font-size: 45px;
   }
@@ -64,11 +67,13 @@ const Intro = styled.div`
   font-family: "Audiowide", cursive;
   font-size: 24px;
   text-align: center;
-  @media (min-width: 850px) {
+  padding: 0 3%;
+  @media (min-width: 768px) {
+    font-size: 32px;
   }
-  @media (min-width: 850px) {
+  @media (min-width: 930px) {
   }
-  @media (min-width: 850px) {
+  @media (min-width: 1200px) {
     padding-left: 10%;
     text-align: right;
   }
@@ -79,9 +84,11 @@ const Headshot = styled.img`
   height: auto;
   border-radius: 45px;
   border: 4px solid black;
+  margin: 0 5%;
   @media (min-width: 850px) {
   }
-  @media (min-width: 850px) {
+  @media (min-width: 930px) {
+    width: 45%;
   }
   @media (min-width: 1400px) {
   }
