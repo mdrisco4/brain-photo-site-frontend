@@ -53,7 +53,7 @@ const IndexPage = () => (
           worry I summitted that climb.
         </Intro>
       </TextContainer>
-      <Headshot src="https://i.imgur.com/w0PoPDx.png" />
+      <Headshot src="https://i.imgur.com/vOSBWlN.jpg" />
     </HomeContainer>
   </Layout>
 )
