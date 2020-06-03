@@ -20,19 +20,22 @@ import Layout from "../components/layout"
 // `
 
 const Prompt = styled.div`
-text-align: center;
-font-size: 36px;
-font-weight: bold;
+  text-align: center;
+  font-size: 36px;
+  font-weight: bold;
+  text-decoration: underline;
+  text-shadow: 1px 1px rgb(216, 100, 52);
 `
 
 const PhotoGrid = styled.div`
   display: grid;
   grid-template-rows: 1fr 1fr;
   grid-template-columns: 1fr 1fr 1fr;
+  margin-bottom: 24px;
 `
 
 const ItemContainer = styled.div`
-padding-top: 20px;
+  padding-top: 20px;
 `
 
 const Title = styled.div`
@@ -59,6 +62,30 @@ const Description = styled.div`
   text-shadow: 1px 1px rgb(216, 100, 52);
   font-size: 20px;
   font-weight: bold;
+`
+
+const ContactPrompt = styled.div`
+  text-align: center;
+  font-size: 36px;
+  font-weight: bold;
+  text-shadow: 1px 1px rgb(216, 100, 52);
+`
+
+const EmailLink = styled.a`
+  color: black;
+  text-decoration: none;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  text-align: center;
+  font-size: 36px;
+  margin-top: 24px;
+  font-weight: bold;
+  text-shadow: 2px 2px rgb(216, 100, 52);
+  &:hover {
+    color: rgb(216, 100, 52);
+    text-shadow: 2px 2px black;
+  }
 `
 
 const URL =
@@ -109,9 +136,18 @@ class Portfolio extends Component {
     })
 
     return (
-        <Layout>
+      <Layout>
         <Prompt>Handpicked examples of my favorite work</Prompt>
         <PhotoGrid>{photos}</PhotoGrid>
+        <ContactPrompt>
+          If you like these and want to know more contact me
+        </ContactPrompt>
+        <ContactPrompt>
+          <EmailLink href="mailto:beefrags1982@gmail.com" target="_blank">
+            beefrags1982@gmail.com
+          </EmailLink>
+        </ContactPrompt>
+        <ContactPrompt>(585) 267-9609</ContactPrompt>
       </Layout>
     )
   }
