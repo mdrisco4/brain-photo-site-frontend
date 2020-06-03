@@ -35,7 +35,7 @@ const PhotoGrid = styled.div`
 `
 
 const ItemContainer = styled.div`
-  padding-top: 60px;
+  padding-top: 90px;
   transition: transform 0.8s ease;
   &:hover {
     transform: scale(1.45);
@@ -143,7 +143,7 @@ class Portfolio extends Component {
 
     return (
       <Layout>
-        <Prompt>Handpicked examples of my favorite work</Prompt>
+        {/* <Prompt>Handpicked examples of my favorite work</Prompt> */}
         <PhotoGrid>{photos}</PhotoGrid>
         <ContactPrompt>
           If you like these and want to know more contact me
