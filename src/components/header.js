@@ -14,7 +14,6 @@ import Navbar from "./Menu/Navbar.js"
 library.add(fab, fas, far)
 
 const Nav = styled.div`
-  /* background: rgb(113, 84, 58); */
   background: black;
   margin: 0;
   height: 110px;
@@ -27,10 +26,16 @@ const IconLink = styled.a`
   padding-left: 2%;
   text-decoration: "none";
   @media (min-width: 768px) {
-    margin-right: 0;
+    margin-right: 6%;
   }
-  @media (min-width: 930px) {
-    margin-right: 7%;
+  @media (min-width: 830px) {
+    margin-right: 9%;
+  }
+  @media (min-width: 960px) {
+    margin-right: 9%;
+  }
+  @media (min-width: 1050px) {
+    margin-right: 14%;
   }
   @media (min-width: 1200px) {
     margin-right: 20%;
@@ -64,21 +69,10 @@ const Header = () => (
         justifyContent: "space-between",
       }}
     >
-      {/* <FontAwesomeIcon icon={["fas", "camera-retro"]} size="3x" />
-    <FontAwesomeIcon icon={["fas", "bars"]} size="3x" /> */}
-
       <IconLink href="/">
         <FontAwesomeIcon icon={["fas", "camera-retro"]} size="1x" />
       </IconLink>
-      {/* <IconLink> */}
-      {/* <FontAwesomeIcon icon={["fas", "bars"]} size="3x" /> */}
-      {/* <i class="fas fa-bars"></i> */}
-      {/* </IconLink> */}
-      {/* <Burger/> */}
       <Navbar/>
-      {/* <HeaderLink href="/portfolio/">Portfolio</HeaderLink>
-      <HeaderLink href="/about/">About</HeaderLink>
-      <HeaderLink href="/contact/">Contact</HeaderLink> */}
     </div>
   </Nav>
 )

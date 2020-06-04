@@ -10,7 +10,9 @@ import Layout from "../components/layout"
 const HomeContainer = styled.div`
   display: flex;
   flex-direction: column-reverse;
-  /* background-image: url('http://images.ctfassets.net/hkey7bq8d8xc/2d2siJGRM2EXx3MMe8N7bn/00f27a790b6ea402db28d6a05942bd27/DSCN0415.JPG'); */
+  max-width: 1200px;
+  margin-right: auto;
+  margin-left: auto;
   @media (min-width: 850px) {
   }
   @media (min-width: 930px) {
@@ -22,6 +24,7 @@ const HomeContainer = styled.div`
 
 const TextContainer = styled.div`
   padding-right: 2%;
+  padding-top: 4%;
   @media (min-width: 850px) {
   }
   @media (min-width: 930px) {
@@ -46,7 +49,7 @@ const Name = styled.div`
     font-size: 35px;
   }
   @media (min-width: 1200px) {
-    font-size: 51px;
+    font-size: 48px;
     text-align: right;
   }
 `
@@ -66,7 +69,7 @@ const Title = styled.div`
   }
   @media (min-width: 1200px) {
     text-align: right;
-    font-size: 45px;
+    font-size: 42px;
   }
 `
 
@@ -84,7 +87,7 @@ const Intro = styled.div`
     font-size: 20px;
   }
   @media (min-width: 1200px) {
-    font-size: 24px;
+    font-size: 21px;
     padding-left: 10%;
     text-align: right;
   }
@@ -96,6 +99,7 @@ const Headshot = styled.img`
   border-radius: 45px;
   border: 4px solid black;
   margin: 0 5%;
+  margin-top: 4%;
   @media (min-width: 850px) {
   }
   @media (min-width: 930px) {

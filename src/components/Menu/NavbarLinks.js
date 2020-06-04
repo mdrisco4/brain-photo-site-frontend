@@ -17,7 +17,7 @@ font-family: "Audiowide", cursive;
   @media (min-width: 768px) {
       color: white;
   }
-  @media (min-width: 930px) {
+  @media (min-width: 960px) {
       font-size: 30px;
   }
   @media (min-width: 850px) {

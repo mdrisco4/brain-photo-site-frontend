@@ -30,18 +30,24 @@ const Prompt = styled.div`
 
 const PhotoGrid = styled.div`
   display: grid;
+  max-width: 1200px;
+  justify-content: center;
+  /* align-items: center; */
   @media (min-width: 575px) {
     grid-template-columns: 1fr 1fr;
     margin-bottom: 80px;
-}
-@media (min-width: 900px) {
+  }
+  @media (min-width: 900px) {
     grid-template-columns: 1fr 1fr 1fr;
     margin-bottom: 100px;
-}
-@media (min-width: 1200px) {
+  }
+  @media (min-width: 1200px) {
     grid-template-rows: 1fr 1fr;
     grid-template-columns: 1fr 1fr 1fr;
-    margin: 40px 0 120px 0;
+    margin-top: 40px;
+    margin-bottom: 120px;
+    margin-right: auto;
+    margin-left: auto;
   }
 `
 
@@ -69,7 +75,7 @@ const Title = styled.div`
   font-size: 30px;
   font-weight: bold;
   @media (min-width: 575px) {
-      font-size: 18px;
+    font-size: 18px;
   }
   @media (min-width: 900px) {
     font-size: 24px;
@@ -107,7 +113,7 @@ const Description = styled.div`
   font-size: 25px;
   font-weight: bold;
   @media (min-width: 575px) {
-      font-size: 16px;
+    font-size: 16px;
   }
   @media (min-width: 900px) {
     font-size: 21px;
@@ -118,7 +124,7 @@ const Description = styled.div`
 `
 
 const ContactPrompt = styled.div`
-font-family: "Audiowide", cursive;
+  font-family: "Audiowide", cursive;
   text-align: center;
   font-size: 20px;
   font-weight: bold;
