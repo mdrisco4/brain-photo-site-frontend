@@ -14,7 +14,6 @@ library.add(fab, fas, far)
 const Navigation = styled.nav`
   height: 10vh;
   display: flex;
-  /* background-color: rgb(113, 84, 58); */
   background-color: black;
   position: relative;
   justify-content: space-between;
@@ -41,21 +40,17 @@ const Toggle = styled.div`
   cursor: pointer;
   padding: 0 6.5vw;
   margin-left: 140%;
-  /* color: white; */
   @media (min-width: 480px) {
     padding: 0;
     margin-left: 500%;
   }
   @media (min-width: 575px) {
-    /* padding: 0 16.5vw; */
     margin-left: 650%;
   }
   @media (min-width: 625px) {
-    /* padding: 0 27vw; */
     margin-left: 750%;
   }
   @media (min-width: 700px) {
-    /* padding: 0 28vw; */
     margin-left: 825%;
   }
 
@@ -121,7 +116,6 @@ const Navbar = () => {
 
   return (
     <Navigation>
-      {/* <FontAwesomeIcon icon={["fas", "bars"]} size="3x"/> */}
       <Logo />
       <Toggle
         navbarOpen={navbarOpen}

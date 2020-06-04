@@ -32,14 +32,14 @@ const PhotoGrid = styled.div`
   display: grid;
   max-width: 1200px;
   justify-content: center;
-  /* align-items: center; */
+  margin-bottom: 128px;
   @media (min-width: 575px) {
     grid-template-columns: 1fr 1fr;
-    margin-bottom: 80px;
+    margin-bottom: 96px;
   }
   @media (min-width: 900px) {
     grid-template-columns: 1fr 1fr 1fr;
-    margin-bottom: 100px;
+    margin-bottom: 110px;
   }
   @media (min-width: 1200px) {
     grid-template-rows: 1fr 1fr;
@@ -52,7 +52,7 @@ const PhotoGrid = styled.div`
 `
 
 const ItemContainer = styled.div`
-  padding-top: 90px;
+  padding-top: 135px;
   transition: transform 0.8s ease;
   @media (min-width: 575px) {
   }
@@ -83,9 +83,6 @@ const Title = styled.div`
   @media (min-width: 1100px) {
     font-size: 30px;
   }
-  /* &:hover {
-      color: goldenrod;
-  } */
 `
 
 const Photo = styled.img`
@@ -126,19 +123,24 @@ const Description = styled.div`
 const ContactPrompt = styled.div`
   font-family: "Audiowide", cursive;
   text-align: center;
-  font-size: 20px;
+  font-size: 22px;
   font-weight: bold;
-  /* padding: 0; */
-  /* text-shadow: 1px 1px rgb(216, 100, 52); */
   @media (min-width: 575px) {
+    font-size: 28px;
+  }
+  @media (min-width: 768px) {
+    font-size: 35px;
   }
   @media (min-width: 900px) {
+    font-size: 42px;
   }
   @media (min-width: 1200px) {
+    font-size: 48px;
   }
 `
 
 const EmailLink = styled.a`
+  font-family: "Audiowide", cursive;
   color: black;
   text-decoration: none;
   display: block;
@@ -150,11 +152,17 @@ const EmailLink = styled.a`
   font-weight: bold;
   text-shadow: 1px 1px white;
   @media (min-width: 575px) {
+    font-size: 28px;
+  }
+  @media (min-width: 768px) {
+    font-size: 36px;
   }
   @media (min-width: 900px) {
+    font-size: 45px;
   }
   font-size: 30px;
   @media (min-width: 1200px) {
+    font-size: 50px;
   }
   &:hover {
     color: white;
@@ -191,8 +199,8 @@ class Portfolio extends Component {
             description: [...this.state.description, code.fields.description],
           })
         })
-        console.log(res.includes.Asset)
-        console.log(this.state.codes)
+        // console.log(res.includes.Asset)
+        // console.log(this.state.codes)
       })
   }
 
@@ -213,16 +221,13 @@ class Portfolio extends Component {
 
     return (
       <Layout>
-        {/* <Prompt>Handpicked examples of my favorite work</Prompt> */}
         <PhotoGrid>{photos}</PhotoGrid>
         <ContactPrompt>
           If you like these and want to know more contact me
         </ContactPrompt>
-        <ContactPrompt>
-          <EmailLink href="mailto:beefrags1982@gmail.com" target="_blank">
-            beefrags1982@gmail.com
-          </EmailLink>
-        </ContactPrompt>
+        <EmailLink href="mailto:beefrags1982@gmail.com" target="_blank">
+          beefrags1982@gmail.com
+        </EmailLink>
         <ContactPrompt>(585) 267-9609</ContactPrompt>
       </Layout>
     )

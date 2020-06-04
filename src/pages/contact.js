@@ -1,11 +1,8 @@
 import React from "react"
 import styled from "styled-components"
 import "../Styles/fonts.css"
-
 // import { Link } from "gatsby"
-
 import Layout from "../components/layout"
-// import SEO from "../components/seo"
 
 const ContactPrompt = styled.div`
 font-family: 'Krona One', sans-serif;
@@ -40,7 +37,6 @@ font-family: 'Krona One', sans-serif;
   font-size: 45px;
   margin-top: 24px;
   font-weight: bold;
-  /* text-shadow: 1px 1px rgb(216, 100, 52); */
 `
 
 const About = () => (
