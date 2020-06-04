@@ -39,8 +39,15 @@ font-family: 'Krona One', sans-serif;
   font-weight: bold;
 `
 
+const FrontPagePic = styled.div`
+  background-image: url('http://images.ctfassets.net/hkey7bq8d8xc/2d2siJGRM2EXx3MMe8N7bn/00f27a790b6ea402db28d6a05942bd27/DSCN0415.JPG');
+  background-size: cover;
+  padding-bottom: 400px;
+`
+
 const About = () => (
   <Layout>
+    <FrontPagePic>
     <ContactPrompt>
       If you have any questions about any of my work and want to know more
       please contact me at:
@@ -50,6 +57,7 @@ const About = () => (
     </EmailLink>
     <Info>(585) 267-9609</Info>
     <Info>Perinton, NY 14450</Info>
+    </FrontPagePic>
   </Layout>
 )
 
