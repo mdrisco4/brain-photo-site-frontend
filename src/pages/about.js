@@ -77,7 +77,7 @@ const About = () => (
       <SectionInfo>
         I am an avid outdoorsman, enjoy camping and regularly travel to the
         Adirondacks to hike, climb and camp on mountains throughout ther region.
-        I also enjoy attending live concerts and festtivals whenever possible to
+        I also enjoy attending live concerts and festivals whenever possible to
         gain new experiences and meet people.
       </SectionInfo>
     </AboutPagePic>
