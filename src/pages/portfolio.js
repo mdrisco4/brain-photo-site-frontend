@@ -32,6 +32,7 @@ const PhotoGrid = styled.div`
   display: grid;
   max-width: 1200px;
   justify-content: center;
+  align-items: center;
   margin-bottom: 128px;
   @media (min-width: 575px) {
     grid-template-columns: 1fr 1fr;
