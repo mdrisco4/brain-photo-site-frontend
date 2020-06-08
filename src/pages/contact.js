@@ -11,7 +11,7 @@ font-family: 'Krona One', sans-serif;
   font-size: 24px;
   margin-left: auto;
   margin-right: auto;
-  padding-top: 5%;
+  padding-top: 10%;
   max-width: 1200px;
   @media (min-width: 575px) {
     font-size: 32px;
@@ -83,7 +83,7 @@ font-family: 'Krona One', sans-serif;
 const ContactPagePic = styled.div`
   background-image: url('http://images.ctfassets.net/hkey7bq8d8xc/2d2siJGRM2EXx3MMe8N7bn/00f27a790b6ea402db28d6a05942bd27/DSCN0415.JPG');
   background-size: cover;
-  padding-bottom: 400px;
+  padding-bottom: 500px;
 `
 
 const About = () => (
