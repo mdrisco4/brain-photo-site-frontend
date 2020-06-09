@@ -3,13 +3,19 @@ import styled from "styled-components"
 // import { Link } from "gatsby"
 import Layout from "../components/layout"
 
+const SectionContainer = styled.div`
+background-color: white;
+opacity: .7;
+padding-bottom: 100px;
+`
+
 const Section = styled.div`
   text-align: center;
   font-size: 32px;
   padding-top: 10%;
   font-family: cursive;
   font-weight: bold;
-  text-shadow: 1px 1px white;
+  /* text-shadow: 1px 1px white; */
   text-decoration: underline;
   @media (min-width: 480px) {
     font-size: 36px;
@@ -36,7 +42,7 @@ const SectionInfo = styled.div`
   font-weight: bold;
   width: 70%;
   margin: 0 15%;
-  text-shadow: 1px 1px white;
+  /* text-shadow: 1px 1px white; */
   max-width: 1200px;
   margin-right: auto;
   margin-left: auto;
@@ -66,6 +72,7 @@ const AboutPagePic = styled.div`
 const About = () => (
   <Layout>
     <AboutPagePic>
+      <SectionContainer>
       <Section>About Me</Section>
       <SectionInfo>
         Born in Texas, I have lived in the greater Rochester area for the past
@@ -80,6 +87,7 @@ const About = () => (
         I also enjoy attending live concerts and festivals whenever possible to
         gain new experiences and meet people.
       </SectionInfo>
+      </SectionContainer>
     </AboutPagePic>
   </Layout>
 )
