@@ -92,7 +92,7 @@ const Photo = styled.img`
   margin-left: 15%;
   border: 2px solid white;
   border-radius: 4px;
-  box-shadow: 0 0 4px black, 0 0 25px violet, 0 0 9px purple;
+  box-shadow: 0 0 4px black, 0 0 30px violet, 0 0 12px purple;
   @media (min-width: 575px) {
   }
   @media (min-width: 900px) {
