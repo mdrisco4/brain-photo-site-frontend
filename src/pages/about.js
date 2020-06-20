@@ -4,9 +4,9 @@ import styled from "styled-components"
 import Layout from "../components/layout"
 
 const SectionContainer = styled.div`
-background-color: white;
-opacity: .7;
-padding-bottom: 100px;
+  background-color: white;
+  opacity: 0.7;
+  padding-bottom: 100px;
 `
 
 const Section = styled.div`
@@ -73,20 +73,21 @@ const About = () => (
   <Layout>
     <AboutPagePic>
       <SectionContainer>
-      <Section>About Me</Section>
-      <SectionInfo>
-        Born in Texas, I have lived in the greater Rochester area for the past
-        25 years. I try to reamin active in the community and currently reside
-        in Fairport. I am actively seeking freelance work and permanent
-        postions.
-      </SectionInfo>
-      <Section>Hobbies and Interests</Section>
-      <SectionInfo>
-        I am an avid outdoorsman, enjoy camping and regularly travel to the
-        Adirondacks to hike, climb and camp on mountains throughout ther region.
-        I also enjoy attending live concerts and festivals whenever possible to
-        gain new experiences and meet people.
-      </SectionInfo>
+        <Section>About Me</Section>
+        <SectionInfo>
+          I have lived in the Greater Rochester area for over 25 years.
+          Photography has been a hobby of mine for over 10 years so I decided to
+          learn more about it and am currently attending the New York Institute
+          of Photography. Soon to be certified from this reputed institution I
+          am seeking freelance work and permanent positions.
+        </SectionInfo>
+        <Section>Hobbies and Interests</Section>
+        <SectionInfo>
+          I am an avid outdoorsman, enjoy camping and regularly travel to the
+          Adirondacks to hike, climb and camp on mountains throughout ther
+          region. I also enjoy attending live concerts and festivals whenever
+          possible to gain new experiences and meet people.
+        </SectionInfo>
       </SectionContainer>
     </AboutPagePic>
   </Layout>
